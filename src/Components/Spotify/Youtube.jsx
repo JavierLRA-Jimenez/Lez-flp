@@ -1,15 +1,15 @@
 import React from 'react'
-import {IoLogoYoutube} from 'react-icons/io'
+import {SiYoutubemusic} from 'react-icons/si'
 
 
-import bluelightlez from '../../assets/leztapa.png'
+import bluelightlez from '../../assets/Uruguay.png'
 const Youtube = () => {
   return (
     <section className='sm:h-[35rem] md:h-[45rem] bg-cover bg-center'style={{ backgroundImage: `url(${bluelightlez})` }} >
 
         <div className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'>
-          <IoLogoYoutube className='w-7 h-7 p-3 rounded-full box-content bg-red-500' />
-          <h1 className='text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-gray-300'>Youtube</h1>
+          <SiYoutubemusic className='w-9 h-9 p-2 rounded-full box-content bg-[#E61D2A]' />
+          <h1 className='text-7xl font-bold text-transparent bg-clip-text bg-white'>YouTube</h1>
         </div>
 
         <div className="flex  justify-center items-center mt-1">
