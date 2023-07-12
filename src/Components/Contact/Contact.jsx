@@ -7,7 +7,7 @@ import {BsWhatsapp} from 'react-icons/bs'
 
 const Contact = () => {
   return (
-    <section className='h-full md:h-[60vh] bg-gray-950' >
+    <section className='h-full md:h-[60vh]' >
       <div>
         <h1 className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'id='contact'>Contact</h1>
       </div>
@@ -21,8 +21,8 @@ const Contact = () => {
           <p className='text-[#c4c4f1] md:items-center md:justify-center text-sm font-normal '>jcmorenojornesbi@gmail.com </p>
 
           <div className='flex flex-row items-center gap-8 justify-center pt-2 z-50 '>
-            <a href='https://www.instagram.com/juaanmoree/'><BsInstagram className=' pt-2 w-11 h-10 text-transparent text-purple-400'/></a>
-            <a href='https://wa.me/message/HN32S5RMOTEBI1'><BsWhatsapp className=' pt-2 w-11 h-10 text-transparent  text-green-400'/></a>
+            <a href='https://www.instagram.com/juaanmoree/'><BsInstagram className=' pt-2 w-11 h-10 text-transparent text-purple-500'/></a>
+            <a href='https://wa.me/message/HN32S5RMOTEBI1'><BsWhatsapp className=' pt-2 w-11 h-10 text-transparent  text-green-500'/></a>
           </div>
         </div>
       </div>
@@ -34,8 +34,8 @@ const Contact = () => {
           <p className='text-[#f3f3f7] md:items-center md:justify-center text-md font-semibold '>Agustín Casal </p>
           <p className='text-[#c4c4f1] md:items-center md:justify-center text-sm font-normal '>agustin_casal@outlook.com</p>
           <div className='flex flex-row items-center gap-8 justify-center pt-2 z-50'>
-            <a href='https://www.instagram.com/aguscasall/'><BsInstagram className=' pt-2 w-11 h-10 text-transparent text-purple-400'/></a>
-            <a href='https://wa.me/message/HN32S5RMOTEBI1'><BsWhatsapp className=' pt-2 w-11 h-10 text-transparent  text-green-400'/></a>
+            <a href='https://www.instagram.com/aguscasall/'><BsInstagram className=' pt-2 w-11 h-10 text-transparent text-purple-500 bg'/></a>
+            <a href='https://wa.me/message/HN32S5RMOTEBI1'><BsWhatsapp className=' pt-2 w-11 h-10 text-transparent  text-green-500'/></a>
           </div>
         </div>
       </div>
