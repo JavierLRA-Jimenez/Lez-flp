@@ -18,11 +18,12 @@ const Body = () => {
           <p className='text-[#3647c5] md:items-center md:justify-center text-xl font-bold '>Nobody really knows... Who I am </p>
           
 
-          <div className='flex flex-col md:flex-row items-center gap-8 justify-center z-[-10]'>
-            <button className='text-white bg-[#E61D2A] py-2 px-8 rounded-lg text-xl '> Contact</button>
+          <div className='flex flex-col md:flex-row items-center gap-8 justify-center '>
+
+            <button className='text-white bg-[#E61D2A] py-2 px-8 rounded-lg text-xl '> <a href='#contact'>Contact</a></button>
 
             <button className='text-white flex items-center gap-4 py-2 px-8 rounded-lg text-xl '>
-              <SlSocialSpotify className='bg-green-400 w-7 h-7  p-3 rounded-full box-content'/> <a href='https://open.spotify.com/playlist/735e4PZh87GSsFIYAnRbXd?si=87684f9e1b474005'>Official Playlist</a>
+              <SlSocialSpotify className='bg-green-400 w-7 h-7  p-3 rounded-full box-content'/> <a href='https://open.spotify.com/playlist/735e4PZh87GSsFIYAnRbXd'>Official Playlist</a>
             </button>
           </div>
 
