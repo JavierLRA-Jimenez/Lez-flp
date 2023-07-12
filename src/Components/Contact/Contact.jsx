@@ -21,7 +21,7 @@ const Contact = () => {
           <p className='text-[#c4c4f1] md:items-center md:justify-center text-sm font-normal '>jcmorenojornesbi@gmail.com </p>
 
           <div className='flex flex-row items-center gap-8 justify-center pt-2 z-50 '>
-            <a href='https://www.instagram.com/juaanmoree/'><BsInstagram className=' pt-2 w-11 h-10 text-transparent text-purple-500'/></a>
+            <a href='https://www.instagram.com/juaanmoree/'><BsInstagram className=' pt-2 w-11 h-10 text-transparent text-purple-500' style={{ color: '#9F7AEA' }}/></a>
             <a href='https://wa.me/message/HN32S5RMOTEBI1'><BsWhatsapp className=' pt-2 w-11 h-10 text-transparent  text-green-500'/></a>
           </div>
         </div>
