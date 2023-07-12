@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import About from './About/About'
 import Spotify from './Spotify/Spotify'
 import Youtube from './Spotify/Youtube'
+import SocialNetwork from './SocialNetwork/SocialNetwork'
 import Contact from './Contact/Contact'
 
 const Container = () => {
@@ -14,6 +15,7 @@ const Container = () => {
         <About/>
         <Spotify/>
         <Youtube/>
+        <SocialNetwork/>
         <Contact/>
 
     </div>

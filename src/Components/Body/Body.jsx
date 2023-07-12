@@ -8,7 +8,7 @@ import portalblocklez from '../../assets/Circo.jpg'
 
 const Body = () => {
   return (
-    <section className='h-[100vh] grid grid-cols-1 md:grid-cols-8'>
+    <section className='h-[100vh] grid grid-cols-1 md:grid-cols-8' id='body'>
       {/*Informacion Welcome */}
       <div className='md:col-span-5 flex items-center justify-center p-8'>
         <div className='flex flex-col items-center gap-8 justify-center'>
@@ -19,10 +19,10 @@ const Body = () => {
           
 
           <div className='flex flex-col md:flex-row items-center gap-8 justify-center z-[-10]'>
-            <button className='text-white bg-[#E61D2A] py-2 px-8 rounded-lg text-xl '>Contact </button>
+            <button className='text-white bg-[#E61D2A] py-2 px-8 rounded-lg text-xl '> Contact</button>
 
             <button className='text-white flex items-center gap-4 py-2 px-8 rounded-lg text-xl '>
-              <SlSocialSpotify className='bg-green-400 w-7 h-7  p-3 rounded-full box-content'/><a href='https://open.spotify.com/playlist/735e4PZh87GSsFIYAnRbXd?si=87684f9e1b474005'>Official Playlist</a>
+              <SlSocialSpotify className='bg-green-400 w-7 h-7  p-3 rounded-full box-content'/> <a href='https://open.spotify.com/playlist/735e4PZh87GSsFIYAnRbXd?si=87684f9e1b474005'>Official Playlist</a>
             </button>
           </div>
 

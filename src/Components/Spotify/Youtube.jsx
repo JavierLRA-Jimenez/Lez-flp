@@ -5,7 +5,7 @@ import {SiYoutubemusic} from 'react-icons/si'
 import bluelightlez from '../../assets/Uruguay.png'
 const Youtube = () => {
   return (
-    <section className='sm:h-[35rem] md:h-[45rem] bg-cover bg-center'style={{ backgroundImage: `url(${bluelightlez})` }} >
+    <section className='sm:h-[35rem] md:h-[45rem] bg-cover bg-center'style={{ backgroundImage: `url(${bluelightlez})` }}  id='youtube' >
 
         <div className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'>
           <SiYoutubemusic className='w-9 h-9 p-2 rounded-full box-content bg-[#E61D2A]' />
