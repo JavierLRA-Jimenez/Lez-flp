@@ -19,7 +19,7 @@ const Header = () => {
         <a href='#about'  className=''>About </a>
         <a href='#spotify'  className=''>Spotify </a>
         <a href='#youtube'  className=''>Youtube </a>
-        <a href='#socialnetwork'  className=''>Social Network </a>
+        <a href='#socialnetwork'  className=''>Network </a>
         <a href='#contact'  className=''>Contact </a>
       </nav>
       <button onClick={() => setShowMenu(!showMenu)} className='text-white xl:hidden text-2xl '>{showMenu ? <MdOutlineCancel/> : <RiMenuUnfoldFill/>}</button> 

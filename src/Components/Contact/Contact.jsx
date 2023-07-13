@@ -4,19 +4,24 @@ import Mgmt from '../../assets/Mgmt.png'
 
 import {BsInstagram} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
+import {BsFillJournalBookmarkFill} from 'react-icons/bs'
 
 const Contact = () => {
   return (
     <section className='h-full md:h-[60vh]' >
-      <div>
-        <h1 className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'id='contact'>Contact</h1>
-      </div>
+      <div className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'>
+          <BsFillJournalBookmarkFill className='w-11 h-11 p-2  box-content bg-black' />
+          <h1 className='text-7xl font-bold text-transparent bg-clip-text bg-white'>Contact</h1>
+        </div>
+
       {/*Informacion Welcome */}
       <div className='grid grid-cols-1 md:grid-cols-8 '>
       <div className='md:col-span-4 flex items-center justify-center p-8'>
         <div className='flex flex-col items-center  justify-center'>
-          <img src={Booker} className=' rounded-full h-40 w-40 '></img>
           <h1 className='text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-[#E61D2A]'>Booking</h1>
+          <br/>
+          <img src={Booker} className=' rounded-full h-40 w-40'></img>
+          <br/>
           <p className='text-[#f3f3f7] md:items-center md:justify-center text-xl font-semibold'>Juan More </p>
           <p className='text-[#c4c4f1] md:items-center md:justify-center text-sm font-normal '>jcmorenojornesbi@gmail.com </p>
 
@@ -29,8 +34,10 @@ const Contact = () => {
 
       <div className='w-full h-30 md:w-auto md:h-auto md:col-span-4 flex justify-center  gap-3  md:mt-6 mb-9'>
         <div className='flex flex-col items-center justify-center'>
-         <img src={Mgmt} className=' rounded-full h-40 w-40 '></img>
           <h1 className='text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-[#E61D2A]'>Management</h1>
+          <br/>
+          <img src={Mgmt} className=' rounded-full h-40 w-40 '></img>
+          <br/>
           <p className='text-[#f3f3f7] md:items-center md:justify-center text-md font-semibold '>Agustín Casal </p>
           <p className='text-[#c4c4f1] md:items-center md:justify-center text-sm font-normal '>agustin_casal@outlook.com</p>
           <div className='flex flex-row items-center gap-8 justify-center pt-2 z-50'>

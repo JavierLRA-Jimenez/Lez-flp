@@ -17,10 +17,10 @@ const About = () => {
             <p>Lez is originally from Rosario, Santa Fe, Argentina. With a career that began in 2013 and
                having been considered a promise in Latin America, Lez has shown himself to be a versatile
                DJ and producer capable of adapting to different styles and trends, quickly standing out for
-               his talent and charisma behind the decks. </p>
+               his talent and charisma behind the decks.At the same time, he studied at the Cetear
+               Institute, which allowed him to expand his knowledge and skills in music production. </p>
             <br/>
-            <p>At the same time, he studied at the Cetear
-               Institute, which allowed him to expand his knowledge and skills in music production.
+            <p>
                His talent and skills have allowed him to perform at different clubs and events in the nightlife
                scene of Rosario, such as Coyote Iglú, Barracao, Complejo Awas, Costello, Madame,
                Metropolitano Rosario, among others. Throughout his career, he has shared the stage with
