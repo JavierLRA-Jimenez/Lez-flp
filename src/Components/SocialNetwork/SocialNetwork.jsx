@@ -22,9 +22,7 @@ const Contact = () => {
 
       <div className="h-[38rem] absolute inset-0 md:h-40rem rounded-xl bg-black/40 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
         <div className='flex h-[38rem] min-h-full flex-col items-center justify-center'>
-          <h1 className='text-6xl font-bold'>Right Now</h1>
           <br/>
-          <p className='text-2xl'>Press BUTTON </p>
           <button className='mt-9 rounded-md bg-purple-900 py-1 px-2 text-3xl font-semibold hover:bg-purple-800 shadow-md shadow-violet-400'><a href='https://linktr.ee/lez.flp'>LinkTree</a></button>
         </div>
       </div>

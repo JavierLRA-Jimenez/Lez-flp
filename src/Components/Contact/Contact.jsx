@@ -1,17 +1,17 @@
 import React from 'react'
 import Booker from '../../assets/Booker.png'
 import Mgmt from '../../assets/Mgmt.png'
-
+import party from '../../assets/party.jpg'
 import {BsInstagram} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
-import {BsFillJournalBookmarkFill} from 'react-icons/bs'
+import {BiBook} from 'react-icons/bi'
 
 const Contact = () => {
   return (
-    <section className='h-full md:h-[60vh]' >
+    <section className='h-full md:h-[70vh] bg-cover bg-center' style={{ backgroundImage: `url(${party})` }}>
       <div className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'>
-          <BsFillJournalBookmarkFill className='w-11 h-11 p-2  box-content bg-black' />
-          <h1 className='text-7xl font-bold text-transparent bg-clip-text bg-white'>Contact</h1>
+          <BiBook className='w-11 h-11 p-2 rounded-full  box-content bg-gray-600' />
+          <h1 className='md:text-7xl text-7xl font-bold p-6 items-center justify-center flex  text-white'>Contact</h1>
         </div>
 
       {/*Informacion Welcome */}
