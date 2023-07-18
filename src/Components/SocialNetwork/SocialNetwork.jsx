@@ -7,7 +7,7 @@ const Contact = () => {
     <section id='socialnetwork' className='h-[55rem]'>
       <div className='md:col-span-4 flex items-center justify-center p-8'>
         <div className='flex flex-col items-center gap-5 justify-center'>
-          <h1 className='md:text-7xl text-7xl font-bold p-6 items-center justify-center flex gap-8 text-white'><TbSocial className='bg-purple-600 w-9 h-9  p-2 rounded-full box-content'/>
+          <h1 className='md:text-7xl text-7xl font-bold p-6 items-center justify-center flex gap-8 text-white'><TbSocial className='bg-purple-600 w-10 h-10  p-2 rounded-full box-content'/>
             Network</h1>
         </div>
       </div>

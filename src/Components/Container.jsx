@@ -6,7 +6,7 @@ import Spotify from './Spotify/Spotify'
 import Youtube from './Spotify/Youtube'
 import SocialNetwork from './SocialNetwork/SocialNetwork'
 import Contact from './Contact/Contact'
-
+import Footer from './Footer/footer'
 const Container = () => {
   return (
     <div>
@@ -17,6 +17,7 @@ const Container = () => {
         <Youtube/>
         <SocialNetwork/>
         <Contact/>
+        <Footer/>
 
     </div>
   )

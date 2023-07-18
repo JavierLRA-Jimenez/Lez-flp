@@ -10,7 +10,7 @@ const Header = () => {
     const [showMenu, setShowMenu ] = useState(false);
   return (
     <header className='flex items-center justify-between xl:justify-start w-full bg-[#191919] p-2 h-[10vh]'>
-      <div className=' h-[70px] w-[90px] m-4 p-1'>
+      <div className=' h-[60px] w-[90px] m-4 p-1'>
         <img src={whitelogo} alt="logo lez" className='w-[70%] flex justify-center m-auto relative'/>
       </div>
 

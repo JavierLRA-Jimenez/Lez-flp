@@ -13,7 +13,7 @@ const About = () => {
 
         <div className='flex flex-row justify-between gap-3 text-white '>
 
-          <div className='bg-[#1d1d64d5] rounded-xl p-5 m-10 opacity-80 leading-7 md:text-l md:items-center md:justify-center'>
+          <div className='bg-[#1d1d64d5] rounded-xl p-5 m-5 opacity-80 leading-7 md:text-l md:items-center md:justify-center'>
             <p>Lez is originally from Rosario, Santa Fe, Argentina. With a career that began in 2013 and
                having been considered a promise in Latin America, Lez has shown himself to be a versatile
                DJ and producer capable of adapting to different styles and trends, quickly standing out for
