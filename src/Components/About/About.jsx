@@ -2,7 +2,7 @@ import React from 'react'
 import {BsPersonFill} from 'react-icons/bs'
 
 //Image
-import infierno from '../../assets/maskgrislez.jpg'
+import infierno from '../../assets/maskgrislez.webp'
 
 const About = () => {
   return (

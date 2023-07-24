@@ -1,5 +1,5 @@
 import React from 'react'
-import Fliplez from '../../assets/Fliplez.jpg'
+import Fliplez from '../../assets/Fliplez.webp'
 import {TbSocial} from 'react-icons/tb'
 
 const Contact = () => {

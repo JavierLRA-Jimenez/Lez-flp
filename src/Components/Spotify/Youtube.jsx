@@ -2,7 +2,7 @@ import React from 'react'
 import {SiYoutubemusic} from 'react-icons/si'
 
 
-import bluelightlez from '../../assets/Uruguay.png'
+import bluelightlez from '../../assets/Uruguay.webp'
 const Youtube = () => {
   return (
     <section className='sm:h-[35rem] md:h-[45rem] bg-cover bg-center'style={{ backgroundImage: `url(${bluelightlez})` }}  id='youtube' >

@@ -2,9 +2,9 @@ import React from 'react'
 import {SlSocialSpotify} from 'react-icons/sl'
 
 //Images
-import backredlez from '../../assets/Bluetren.jpg'
-import frontredlez from '../../assets/frontredlez.jpg'
-import portalblocklez from '../../assets/Circo.jpg'
+import backredlez from '../../assets/Bluetren.webp'
+import frontredlez from '../../assets/frontredlez.webp'
+import portalblocklez from '../../assets/Circo.webp'
 
 const Body = () => {
   return (
