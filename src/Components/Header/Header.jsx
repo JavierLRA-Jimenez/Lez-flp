@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import whitelogo from '../../assets/LEZCIR.png';
+import { Link } from 'react-scroll'; // Importa el componente Link de react-scroll
 import { RiMenuUnfoldFill } from 'react-icons/ri';
 import { MdOutlineCancel } from 'react-icons/md';
 
@@ -17,13 +18,13 @@ const Header = () => {
         <img src={whitelogo} alt="logo lez" className='w-[70%] flex justify-center m-auto relative' />
       </div>
 
-      <nav className={`fixed bg-[#191919] w-[80%] md:w-[40%]  xl:w-full h-full ${showMenu ? 'left-0' : '-left-full'} top-0 xl:static flex-1 flex text-white justify-center items-center font-bold gap-10 flex-col xl:flex-row transition-all duration-700 z-50`}>
-        <a href='#body' onClick={closeMenu} className=''>Home</a>
-        <a href='#about' onClick={closeMenu} className=''>About</a>
-        <a href='#spotify' onClick={closeMenu} className=''>Spotify</a>
-        <a href='#youtube' onClick={closeMenu} className=''>Youtube</a>
-        <a href='#socialnetwork' onClick={closeMenu} className=''>Network</a>
-        <a href='#contact' onClick={closeMenu} className=''>Contact</a>
+      <nav className={`fixed bg-[#191919] w-[80%] md:w-[40%]  xl:w-full h-full ${showMenu ? 'left-0' : '-left-full'} top-0 xl:static flex-1 flex text-white justify-center cursor-pointer items-center font-bold gap-10 flex-col xl:flex-row transition-all duration-700 z-50`}>
+        <Link to="body" spy={true} smooth={true} duration={500} onClick={closeMenu}>Home</Link>
+        <Link to="about" spy={true} smooth={true} duration={500} onClick={closeMenu}>About</Link>
+        <Link to="spotify" spy={true} smooth={true} duration={500} onClick={closeMenu}>Spotify</Link>
+        <Link to="youtube" spy={true} smooth={true} duration={500} onClick={closeMenu}>Youtube</Link>
+        <Link to="socialnetwork" spy={true} smooth={true} duration={500} onClick={closeMenu}>Network</Link>
+        <Link to="contact" spy={true} smooth={true} duration={500} onClick={closeMenu}>Contact</Link>
       </nav>
       <button onClick={() => setShowMenu(!showMenu)} className='text-white xl:hidden text-2xl '>{showMenu ? <MdOutlineCancel /> : <RiMenuUnfoldFill />}</button>
 
