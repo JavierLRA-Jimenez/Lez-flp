@@ -7,13 +7,13 @@ const Contact = () => {
     <section id='socialnetwork' className='h-[55rem]'>
       <div>
         <h1 className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'><TbSocial className='bg-purple-700 w-9 h-9  p-2 rounded-full box-content'/>
-            <span className='text-transparent bg-clip-text bg-white'>Network</span></h1>
+            <span className=' bg-white'>Network</span></h1>
       </div>
       
     {/* Imagen card Flip */}
     <div className='flex items-center justify-center md:flex-row flex-col  md:ml-[-25rem]'>
   <div className='group h-96 w-96 [perspective:1000px] '>
-    <div className='justify-center py-1 h-[40rem] md:h-[30rem] w-[22rem] md:w-[50rem] flex shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+    <div className='justify-center py-1 h-[40rem] md:h-[30rem] w-[23rem] md:w-[50rem] flex shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
       <div style={{ margin: '0 auto' }}>
         <img src={Fliplez} className='md:h-[38rem] h-[38rem] object-cover opacity-90 shadow-xl shadow-purple-700 rounded-xl' />
       </div>
