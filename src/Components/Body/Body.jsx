@@ -33,7 +33,7 @@ const Body = () => {
 
 
       {/*Imagen Welcome */}
-      <div className='w-full h-30 md:w-auto md:h-auto md:col-span-3 flex justify-center  gap-3  md:mt-6 mb-9'>
+      <div className='w-auto h-25 md:w-auto md:h-auto md:col-span-3 flex justify-center  gap-  md:mt-6 mb-9'>
         <img src={backredlez} className='w-1/3  object-cover opacity-90'/>
         <img src={portalblocklez} className='w-1/3 object-cover opacity-90'/>
         <img src={frontredlez} className='w-1/3 object-cover opacity-90 '/>

@@ -2,6 +2,7 @@ import React from 'react';
 import { BsPersonFill } from 'react-icons/bs';
 import infierno from '../../assets/maskgrislez.webp';
 
+
 const About = () => {
   return (
     <section className='md:h-[37rem]' id='about'>
@@ -9,7 +10,7 @@ const About = () => {
 
         <h1 className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'><BsPersonFill className='bg-blue-800 w-9 h-9 p-2 rounded-full box-content' />About Me</h1>
 
-        <div className='flex flex-row justify-between gap-3 text-white'>
+        <div className='flex flex-row  gap-3 text-white'>
 
           <div className='bg-[#1d1d64d5] rounded-lg p-5 m-2 opacity-80 text-xs md:text-base'>
             <p>Lez is originally from Rosario, Santa Fe, Argentina. With a career that began in 2013 and

@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <section className='h-full md:h-[90vh] bg-cover bg-center bg-opacity-50 ' style={{ backgroundImage: `url(${party})`}}>
       <div className='text-7xl font-bold p-6 items-center justify-center flex  text-white'>
-          <BiBook className='w-9 h-9 p-3 rounded-full  box-content bg-red-700' />
+          <BiBook className='w-9 h-9 p-2 rounded-full  box-content bg-red-700' />
           <h1 className='md:text-7xl text-7xl font-bold p-6 items-center justify-center flex  text-white' id='contact'>Contact</h1>
         </div>
 
