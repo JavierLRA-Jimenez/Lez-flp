@@ -7,7 +7,7 @@ const Spotify = () => {
         <section className='md:h-[35rem] ' id='spotify'>
           <div>
             <h1 className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'><SlSocialSpotify className='bg-green-500 w-9 h-9  p-2 rounded-full box-content'/><a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'>
-              <span className='text-transparent bg-clip-text bg-white'>Spotify</span></a></h1>
+              <span className='text-white'>Spotify</span></a></h1>
           </div>
 
           <div className="flex flex-row flex-wrap md:flex-nowrap  p-4 justify-between ">

@@ -7,7 +7,7 @@ const Contact = () => {
     <section id='socialnetwork' className='h-[55rem]'>
       <div>
         <h1 className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'><TbSocial className='bg-purple-700 w-9 h-9  p-2 rounded-full box-content'/>
-            <span className=' bg-white'>Network</span></h1>
+            <span className=' text-white'>Network</span></h1>
       </div>
       
     {/* Imagen card Flip */}

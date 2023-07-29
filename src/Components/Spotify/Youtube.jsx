@@ -9,7 +9,7 @@ const Youtube = () => {
 
         <div className='text-7xl font-bold p-8 items-center justify-center flex gap-8 text-white'>
           <SiYoutubemusic className='w-9 h-9 p-2 rounded-full box-content bg-[#E61D2A]' />
-          <h1 className='text-7xl font-bold text-transparent bg-clip-text bg-white'>YouTube</h1>
+          <h1 className='text-7xl font-bold  text-white'>YouTube</h1>
         </div>
 
         <div className="flex  justify-center items-center mt-1">
