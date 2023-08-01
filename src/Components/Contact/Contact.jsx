@@ -5,7 +5,7 @@ import party from '../../assets/Metropolitano.jpg'
 import {BsInstagram} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
 import {BiBook} from 'react-icons/bi'
-import {RxTextAlignTop} from 'react-icons/rx'
+
 
 const Contact = () => {
   return (
@@ -50,10 +50,7 @@ const Contact = () => {
 
         
       </div>
-      <div className='flex items-center md:justify-end justify-center m-10'>
-        <a href='#body' className=''><RxTextAlignTop className='bg-blue-200 w-8 md:w-9 h-8 md:h-9 p-2 rounded-full  box-content cursor-pointer'/></a>
-      </div>
-
+      
 
     </section>
   )

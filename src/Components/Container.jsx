@@ -8,10 +8,12 @@ import Youtube from './Spotify/Youtube';
 import SocialNetwork from './SocialNetwork/SocialNetwork';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import FloatingButton from './FloatingButton';
 
 const Container = () => {
   return (
     <div>
+      <FloatingButton />
       <Header />
       <Element name="body">
         <Body />
