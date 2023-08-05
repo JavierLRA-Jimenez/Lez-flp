@@ -9,6 +9,7 @@ import SocialNetwork from './SocialNetwork/SocialNetwork';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import FloatingButton from './FloatingButton';
+import Fear from './Fear/Fear';
 
 const Container = () => {
   return (
