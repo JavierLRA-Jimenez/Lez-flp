@@ -1,5 +1,5 @@
 import React from 'react';
-import infierno from '../../assets/industrial.jpg';
+import infierno from '../../assets/Industrial.jpg';
 import mask from '../../assets/maskgrislez.jpg'
 import {BsInstagram} from 'react-icons/bs'
 import {BsTiktok} from 'react-icons/bs'
