@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import infierno from '../../assets/industrial.jpg';
+import infierno from '../../assets/Industrial.jpg';
 import mask from '../../assets/maskgrislez.jpg';
 import hola from '../../assets/Outdoor.jpg';
 import circo from '../../assets/Circo.webp';
