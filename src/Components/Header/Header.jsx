@@ -42,7 +42,6 @@ const Header = () => {
         <BsInstagram className='cursor-pointer' />
         <BsSpotify className='cursor-pointer' />
         <SiBeatport className='cursor-pointer' />
-        <BsTiktok className='cursor-pointer' />
         <SiThreads className='cursor-pointer'/>
         <IoLogoYoutube className='cursor-pointer'/>
       </div>
