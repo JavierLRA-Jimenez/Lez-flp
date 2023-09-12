@@ -64,12 +64,6 @@ equipo de trabajo que lo guía en su carrera y forma parte de su booking de arti
       <div className='w-[31rem] pl-[10rem] '>
           <img src={infierno} alt='Infierno' className=' rounded-xl' />
       </div>
-
-      <div className='w-full h-30 md:w-auto md:h-auto flex justify-center items-center gap-3 '>
-  
-    
-  </div>
-
     </div>
   
 </section>
