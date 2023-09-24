@@ -45,17 +45,17 @@ equipo de trabajo que lo guía en su carrera y forma parte de su booking de arti
         <br />
 
         <div className='flex flex-col'>
-          <h1 className='text-[#f3f3f7] text-3xl font-semibold '>CONTACTO</h1>
-          <p className='text-[#c4c4f1] md:items-center md:justify-center text-md font-medium cursor-pointer'>agustin_casal@outlook.com</p>
-          <a href='https://wa.me/message/E3BFDOKO4JSDG1' className='pt-1 text-[#c4c4f1]'>whatsupp/contacto-mgmt</a>
-          <div className='flex flex-row  gap-3 pt-3 z-50'>
-            <BsInstagram />
-            <BsSpotify />
-            <SiBeatport />
-            <BsTiktok />
-           <SiThreads/>
-           <IoLogoYoutube/>
-          </div>
+          <h1 className='text-[#f3f3f7] text-2xl font-semibold '>CONTACTO</h1>
+          <p className='md:items-center md:justify-center text-md font-medium cursor-pointer'>agustin_casal@outlook.com</p>
+          <a href='https://wa.me/message/E3BFDOKO4JSDG1' className='pt-1 '>whatsupp/contacto-mgmt</a>
+          <div className='flex flex-row pt-3 z-50 space-x-7'>
+  <BsInstagram className='text-xl' />
+  <BsSpotify className='text-xl' />
+  <SiBeatport className='text-xl' />
+  <BsTiktok className='text-xl' />
+  <SiThreads className='text-xl' />
+  <IoLogoYoutube className='text-xl' />
+</div>
         </div>
         
         

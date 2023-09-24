@@ -17,7 +17,7 @@ const Youtube = () => {
         <iframe width="80%" height="242" src="https://www.youtube.com/embed/9SJtOdGyqc0?si=qgXksb9lYCEPkyYA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div>
-        <iframe width="80%" height="242" src="https://www.youtube.com/embed/1AWTZKTIAEE?si=dEJxmkBuvsS9D1tF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="80%" height="242" src="https://www.youtube.com/embed/hKgbsGxI31g?si=9-Cs6p3vAjp9WwsD" allowfullscreen></iframe>
       </div>
     </div>
   </div>
