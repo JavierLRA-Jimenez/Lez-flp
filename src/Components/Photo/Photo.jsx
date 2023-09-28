@@ -3,28 +3,107 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import infierno from '../../assets/Industrial.jpg';
-import mask from '../../assets/maskgrislez.jpg';
-import hola from '../../assets/Outdoor.jpg';
-import circo from '../../assets/Circo.webp';
-import bluetren from '../../assets/Bluetren.webp';
-import fliplez from '../../assets/Fliplez.webp';
-import redlez from '../../assets/frontredlez.webp';
+import v1 from '../../assets/Vertical/1V.jpeg'
+import v2 from '../../assets/Vertical/2V.jpg'
+import v4 from '../../assets/Vertical/4V.jpg'
+import v5 from '../../assets/Vertical/5V.jpg'
+import v6 from '../../assets/Vertical/6V.jpg'
+import v7 from '../../assets/Vertical/7V.jpg'
+import v8 from '../../assets/Vertical/8V.jpg'
+import v9 from '../../assets/Vertical/9V.jpg'
+import v10 from '../../assets/Vertical/10V.jpg'
+import v11 from '../../assets/Vertical/11V.jpg'
+import v12 from '../../assets/Vertical/12V.jpg'
+import v13 from '../../assets/Vertical/13V.jpg'
+import v14 from '../../assets/Vertical/14V.jpg'
+import v15 from '../../assets/Vertical/15V.jpg'
+import v16 from '../../assets/Vertical/16V.jpg'
+import v17 from '../../assets/Vertical/17V.jpg'
+import v18 from '../../assets/Vertical/18V.jpg'
+import v19 from '../../assets/Vertical/19V.jpg'
+import v20 from '../../assets/Vertical/20V.jpg'
+import v21 from '../../assets/Vertical/21V.jpg'
+import v22 from '../../assets/Vertical/22V.jpg'
+import v23 from '../../assets/Vertical/23V.jpg'
+import v24 from '../../assets/Vertical/24V.jpg'
+
+import h1 from '../../assets/Horizontal/H1.jpg'
+import h2 from '../../assets/Horizontal/H2.png'
+import h3 from '../../assets/Horizontal/H3.jpg'
+import h4 from '../../assets/Horizontal/H4.png'
+import h5 from '../../assets/Horizontal/H5.jpg'
+import h6 from '../../assets/Horizontal/H6.png'
+import h7 from '../../assets/Horizontal/H7.jpg'
+import h8 from '../../assets/Horizontal/H8.png'
+import h9 from '../../assets/Horizontal/H9.jpg'
+import h10 from '../../assets/Horizontal/H10.jpg'
+import h11 from '../../assets/Horizontal/H11.jpg'
+import h12 from '../../assets/Horizontal/H12.jpg'
+import h13 from '../../assets/Horizontal/H13.jpg'
+import h14 from '../../assets/Horizontal/H14.jpg'
+import h15 from '../../assets/Horizontal/H15.jpg'
+import h16 from '../../assets/Horizontal/H16.jpg'
+import h17 from '../../assets/Horizontal/H17.jpg'
+import h18 from '../../assets/Horizontal/H18.jpg'
+import h19 from '../../assets/Horizontal/H19.jpg'
+import h20 from '../../assets/Horizontal/H20.jpg'
+import h21 from '../../assets/Horizontal/H21.jpg'
+import h22 from '../../assets/Horizontal/H22.jpg'
+import h23 from '../../assets/Horizontal/H23.jpg'
 
 const Contact = () => {
   const images = [
-    fliplez,
-    mask,
-    hola,
-    circo,
-    bluetren,
-    infierno,
-    redlez,
+    v1,
+    v2,
+    v4,
+    v5,
+    v6,
+    v7,
+    v8, 
+    v9, 
+    v10, 
+    v11, 
+    v12,
+    v13,
+    v14,
+    v15,
+    v16,
+    v17,
+    v18,
+    v19,
+    v20,
+    v21,
+    v22,
+    v23,
+    v24,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h7,
+    h8, 
+    h9, 
+    h10, 
+    h11, 
+    h12,
+    h13,
+    h14,
+    h15,
+    h16,
+    h17,
+    h18,
+    h19,
+    h20,
+    h21,
+    h22,
+    h23,
   ];
 
   // Dividir el array de imágenes en dos
-  const firstCarouselImages = images.slice(0, 3); // Mostrar 2 imágenes en el primer carrusel
-  const secondCarouselImages = images.slice(0,6); // Mostrar 4 imágenes en el segundo carrusel
+  const firstCarouselImages = images.slice(24, 45); // Mostrar 2 imágenes en el primer carrusel
+  const secondCarouselImages = images.slice(0,23); // Mostrar 4 imágenes en el segundo carrusel
 
   const firstCarouselSettings = {
     dots: true,
