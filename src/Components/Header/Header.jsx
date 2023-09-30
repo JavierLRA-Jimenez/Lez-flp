@@ -23,11 +23,12 @@ const Header = () => {
 
   return (
     <header className='sticky top-0 z-50 flex items-center justify-center xl:justify-start w-full  md:bg-transparent p-2 h-[10vh]'>
-      <div className='h-[60px] w-[90px] m-4 p-1' style={{ marginLeft: '6rem' }}>
+      <div className='h-[60px] w-[90px] m-4 p-1' style={{ marginLeft: '17rem' }}>
         <img src={White} alt="logo lez" className='w-[40%] flex m-auto relative pt-2  ' />
       </div>
 
       <nav className={`md:bg-transparent w-full md:max-w-sm h-full space-x-7 ${showMenu ? 'left-0' : '-left-full'} flex-1 flex text-white justify-center items-center font-light gap-2 flex-col xl:flex-row mx-auto transition-all duration-700`}>
+        
   <Link to="body" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>HOME</Link>
   <Link to="spotify" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>MÚSICA</Link>
   <Link to="youtube" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>VIDEOS</Link>
@@ -37,7 +38,7 @@ const Header = () => {
 </nav>
       <button onClick={() => setShowMenu(!showMenu)} className='text-white xl:hidden text-2xl '>{showMenu ? <MdOutlineCancel /> : <RiMenuUnfoldFill />}</button>
 
-      <div className='flex items-center space-x-7 text-white ' style={{ marginRight: '8rem' }}>
+      <div className='flex items-center space-x-7 text-white ' style={{ marginRight: '13rem' }}>
         {/* Iconos de redes sociales */}
         <BsInstagram className='cursor-pointer' />
         <BsSpotify className='cursor-pointer' />
