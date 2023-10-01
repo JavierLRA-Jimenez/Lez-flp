@@ -13,11 +13,8 @@ const Youtube = () => {
       <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQdn5mCUHPs?si=hkKcuGMiA0sGevN-&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div className="w-1/2 p-4">
-      <div className="mb-4">
-        <iframe width="80%" height="242" src="https://www.youtube.com/embed/9SJtOdGyqc0?si=qgXksb9lYCEPkyYA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
       <div>
-        <iframe width="80%" height="242" src="https://www.youtube.com/embed/hKgbsGxI31g?si=9-Cs6p3vAjp9WwsD" allowfullscreen></iframe>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/hKgbsGxI31g?si=9-Cs6p3vAjp9WwsD" allowfullscreen></iframe>
       </div>
     </div>
   </div>
