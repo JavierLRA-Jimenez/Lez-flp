@@ -1,10 +1,11 @@
 import React from 'react'
 import party from '../../assets/Metropolitanoo.jpg'
+import { motion } from "framer-motion";
 
 const Spotify = () => {
     
       return (
-        <section className='md:h-[45rem] bg-cover bg-center h-scream bg-fixed' style={{ backgroundImage: `url(${party})`}} id='spotify'>
+        <motion.div className='md:h-[45rem] bg-cover bg-center h-scream bg-fixed' style={{ backgroundImage: `url(${party})`}} id='spotify'>
           <div>
             <h2 className='text-4xl p-8 items-center justify-center flex gap-8 text-white'><a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'>
               <span className='text-white'>MÚSICA</span></a></h2>
@@ -25,7 +26,7 @@ const Spotify = () => {
     <div className='absolute top-0 left-0 w-full h-full bg-green-400 opacity-0 transform scale-150 origin-top-left transition-all duration-500 group-hover:opacity-50 animate-pulse'></div>
   </button>
 </div>
-        </section>
+        </motion.div>
       );
     };
     

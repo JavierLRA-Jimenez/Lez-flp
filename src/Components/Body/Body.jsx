@@ -1,10 +1,10 @@
 import React from 'react';
-import { SlSocialSpotify } from 'react-icons/sl';
 import infierno from '../../assets/Outdoor.jpg';
+import { motion } from "framer-motion";
 
 const Body = () => {
   return (
-    <section className='flex h-[100vh] bg-cover bg-center h-scream bg-fixed' style={{ backgroundImage: `url(${infierno})` }} id='body'>
+    <motion.div className='flex h-[100vh] bg-cover bg-center h-scream bg-fixed' style={{ backgroundImage: `url(${infierno})` }} id='body'>
       
 
       {/* Información */}
@@ -20,7 +20,7 @@ const Body = () => {
 
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 };
 

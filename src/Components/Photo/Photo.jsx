@@ -50,6 +50,8 @@ import h20 from '../../assets/Horizontal/H20.jpg'
 import h21 from '../../assets/Horizontal/H21.jpg'
 import h22 from '../../assets/Horizontal/H22.jpg'
 import h23 from '../../assets/Horizontal/H23.jpg'
+import { motion } from "framer-motion";
+import { useMediaQuery } from '@react-hook/media-query';
 
 const Contact = () => {
   const images = [
@@ -101,59 +103,68 @@ const Contact = () => {
     h23,
   ];
 
-  // Dividir el array de imágenes en dos
-  const firstCarouselImages = images.slice(24, 45); // Mostrar 2 imágenes en el primer carrusel
-  const secondCarouselImages = images.slice(0,23); // Mostrar 4 imágenes en el segundo carrusel
-
-  const firstCarouselSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-  };
-
-  const secondCarouselSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  };
-
-  const sliderStyle = {
+   // Dividir el array de imágenes en dos
+   const firstCarouselImages = images.slice(24, 45); // Mostrar 2 imágenes en el primer carrusel
+   const secondCarouselImages = images.slice(0, 23); // Mostrar 4 imágenes en el segundo carrusel
+ 
+   // Detectar el tamaño de la pantalla
+   const isSmallScreen = useMediaQuery('(max-width: 640px)'); // Cambia el valor según tu breakpoint
+ 
+   // Determinar el número de imágenes a mostrar en cada carrusel
+   const firstCarouselSlidesToShow = isSmallScreen ? 1 : 2;
+   const secondCarouselSlidesToShow = isSmallScreen ? 2 : 4;
+ 
+   const firstCarouselSettings = {
+     dots: true,
+     infinite: true,
+     speed: 500,
+     slidesToShow: firstCarouselSlidesToShow,
+     slidesToScroll: 1,
+   };
+ 
+   const secondCarouselSettings = {
+     dots: true,
+     infinite: true,
+     speed: 500,
+     slidesToShow: secondCarouselSlidesToShow,
+     slidesToScroll: 1,
+   };
+ 
+   const sliderStyle = {
     width: '80%',
     margin: '0 auto',
+    padding: '0 20px', // Agregar un relleno para compensar el margen negativo
   };
-
+  
   const imageStyle = {
     width: '80%',
+    margin: '0 24px', // Aplicar margen negativo a las imágenes
   };
-
-  return (
-    <div className='h-[60rem]'>
-      <div>
-          <h2 className='text-4xl p-8 items-center justify-center flex gap-8 text-white' id='fotos'>FOTOS</h2>
-          </div>
-      <Slider {...firstCarouselSettings} style={sliderStyle} className='pt-6'>
-        {firstCarouselImages.map((image, index) => (
-          <div key={index}>
-            <img src={image} alt={`Image ${index}`} style={imageStyle} />
-          </div>
-        ))}
-      </Slider>
-      
-      {/* Segundo carrusel */}
-      
-      <Slider {...secondCarouselSettings} style={sliderStyle}>
-        {secondCarouselImages.map((image, index) => (
-          <div key={index}>
-            <img src={image} alt={`Image ${index}`} style={imageStyle} />
-          </div>
-        ))}
-      </Slider>
-    </div>
-  );
-};
-
-export default Contact;
+ 
+   return (
+     <motion.div className='md:h-[60rem]'>
+       <div>
+         <h2 className='text-4xl p-8 items-center justify-center flex gap-8 text-white' id='fotos'>FOTOS</h2>
+       </div>
+       <Slider {...firstCarouselSettings} style={sliderStyle} className='pt-6'>
+         {firstCarouselImages.map((image, index) => (
+           <div key={index}>
+             <img src={image} alt={`Image ${index}`} style={imageStyle} />
+           </div>
+         ))}
+       </Slider>
+ 
+       {/* Segundo carrusel */}
+ 
+       <Slider {...secondCarouselSettings} style={sliderStyle}>
+         {secondCarouselImages.map((image, index) => (
+           <div key={index}>
+             <img src={image} alt={`Image ${index}`} style={imageStyle} />
+           </div>
+         ))}
+       </Slider>
+     </motion.div>
+   );
+ };
+ 
+ export default Contact;
