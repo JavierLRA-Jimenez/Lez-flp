@@ -8,14 +8,14 @@ import { motion } from 'framer-motion';
 // social media
 import { BsInstagram } from 'react-icons/bs';
 import { BsTiktok } from 'react-icons/bs';
-import { BsSpotify } from 'react-icons/bs';
+import { BsSpotify} from 'react-icons/bs';
 import { SiThreads } from 'react-icons/si';
 import { SiBeatport } from 'react-icons/si';
 import { IoLogoYoutube } from 'react-icons/io';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+  const isMobile = window.innerWidth <= 768;
 
   // Función para cerrar el menú automáticamente después de hacer clic en un enlace
   const closeMenu = () => {
@@ -23,23 +23,32 @@ const Header = () => {
   };
 
   // Manejador de eventos para mostrar el menú cuando la pantalla se expande o reduce
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsSmallScreen(false);
-        setShowMenu(true);
-      } else {
-        setIsSmallScreen(true);
-        setShowMenu(false);
-      }
-    };
+  const handleResize = () => {
+    if (window.innerWidth <= 768) {
+      setIsSmallScreen(true);
+      setShowMenu(false);
+    } else {
+      setIsSmallScreen(false);
+      setShowMenu(true);
+    }
+  };
 
+  // Inicializa la variable isSmallScreen al cargar el componente
+  const [isSmallScreen, setIsSmallScreen] = useState(isMobile);
+
+  useEffect(() => {
+    // Configura el manejador de eventos al cargar el componente
+    handleResize();
+
+    // Agrega un oyente de eventos para el cambio de tamaño de la ventana
     window.addEventListener('resize', handleResize);
 
+    // Limpia el oyente de eventos al desmontar el componente
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
 
   return (
     <motion.div className='sticky top-0 z-50 flex items-center justify-center xl:justify-start w-full md:bg-transparent p-2 h-[10vh]'>
