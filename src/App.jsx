@@ -6,8 +6,8 @@ const App = () => {
   return (
     <Router basename="/">
       <Switch>
-        <Route exact path="https://lezflp.netlify.app/" component={Container} />
-        <Route path="https://lezflp.netlify.app/Fear" component={Fear} />
+        <Route exact path="/" component={Container} />
+        <Route path="/Fear" component={Fear} />
 
       </Switch>
     </Router>
