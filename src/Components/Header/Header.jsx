@@ -133,7 +133,7 @@ const Header = () => {
           <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className='cursor-pointer' /></a>
           <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className='cursor-pointer' /></a>
           <a href='https://www.threads.net/@lez.flp'><SiThreads className='cursor-pointer'/></a>
-          <a href='https://www.youtube.com/@lez.'></a><IoLogoYoutube className='cursor-pointer' />
+          <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer' /></a>
         </div>
       )}
     </motion.div>
