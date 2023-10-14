@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Fear = () => {
   const [showImage, setShowImage] = useState(false);
@@ -30,12 +31,15 @@ const Fear = () => {
       </video>
 
       {showImage && (
-        <img
-          src="src/assets/FEARLOGO.png"
-          alt="Imagen"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[30rem] max-h-[30rem] opacity-0 transition-opacity duration-3000 items-center justify-center"
-          style={{ opacity: 1 }}
-        />
+        <>
+          <Link to="/fear">Ir a la sección de Fear</Link>
+          <img
+            src="src/assets/FEARLOGO.png"
+            alt="Imagen"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[30rem] max-h-[30rem] opacity-0 transition-opacity duration-3000 items-center justify-center"
+            style={{ opacity: 1 }}
+          />
+        </>
       )}
     </div>
   );
