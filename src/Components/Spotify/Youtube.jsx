@@ -20,7 +20,7 @@ const Youtube = () => {
 
       <div className='flex flex-col md:flex-row items-center justify-center md:pt-10'>
         <button className='relative text-white py-2 px-8 rounded-lg text-x overflow-hidden group focus:outline-none animate-bounce'>
-          <span className='z-10 relative'>YouTube</span>
+          <span className='z-10 relative'><a href='https://www.youtube.com/@lez.'>YouTube</a></span>
           <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-500 via-black to-red-500 opacity-0 transform scale-110 origin-top-left transition-transform duration-500 group-hover:opacity-100'></div>
           <div className='absolute top-0 left-0 w-full h-full bg-transparent border-4 border-white opacity-0 transform scale-150 origin-top-left transition-all duration-500'></div>
           <div className='absolute top-0 left-0 w-full h-full bg-transparent border-4 border-white opacity-0 transform scale-150 origin-top-left transition-all duration-500'></div>

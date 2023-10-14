@@ -102,39 +102,38 @@ const Header = () => {
         </div>
       )}
 
-      {/* Menú para pantallas medianas y grandes */}
-      {!isSmallScreen && (
-        <nav className={`md:bg-transparent w-full md:max-w-sm h-full space-x-7 transform transition-transform duration-700 translate-y-0 flex-1 flex text-white justify-center items-center font-light gap-2 ${showMenu ? 'md:flex-row' : 'md:flex-col'} mx-auto md:flex`}>
-          <Link to="body" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
-            HOME
-          </Link>
-          <Link to="spotify" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
-            MÚSICA
-          </Link>
-          <Link to="youtube" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
-            VIDEOS
-          </Link>
-          <Link to="fotos" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
-            FOTOS
-          </Link>
-          <Link to="about" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
-            BIOGRAFÍA
-          </Link>
-          <Link to="contact" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
-            CONTACTO
-          </Link>
-        </nav>
-      )}
+{!isSmallScreen && (
+  <nav className={`md:bg-transparent w-full md:max-w-sm h-full space-x-7 transform transition-transform duration-700 translate-y-0 flex-1 flex text-white justify-center items-center font-light gap-2 ${showMenu ? 'md:flex-row' : ''} mx-auto md:flex`}>
+    <Link to="body" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
+      HOME
+    </Link>
+    <Link to="spotify" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
+      MÚSICA
+    </Link>
+    <Link to="youtube" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
+      VIDEOS
+    </Link>
+    <Link to="fotos" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
+      FOTOS
+    </Link>
+    <Link to="about" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
+      BIOGRAFÍA
+    </Link>
+    <Link to="contact" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
+      CONTACTO
+    </Link>
+  </nav>
+)}
 
       {/* Iconos de redes sociales para pantallas medianas y grandes */}
       {!isSmallScreen && (
         <div className='flex items-center md:space-x-7 space-x-5 text-white md:mr-[13rem]'>
-          <BsInstagram className='cursor-pointer' />
-          <BsSpotify className='cursor-pointer' />
-          <SiBeatport className='cursor-pointer' />
-          <BsTiktok className='cursor-pointer' />
-          <SiThreads className='cursor-pointer' />
-          <IoLogoYoutube className='cursor-pointer' />
+          <a href='https://www.instagram.com/lez.flp/'><BsInstagram className='cursor-pointer' /></a>
+          <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className='cursor-pointer' /></a>
+          <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className='cursor-pointer' /></a>
+          <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className='cursor-pointer' /></a>
+          <a href='https://www.threads.net/@lez.flp'><SiThreads className='cursor-pointer'/></a>
+          <a href='https://www.youtube.com/@lez.'></a><IoLogoYoutube className='cursor-pointer' />
         </div>
       )}
     </motion.div>

@@ -48,19 +48,19 @@ const About = () => {
 
       <div className="flex flex-col md:w-[50%] sm:w-full md:pl-[7rem] pl-3 pt-5">
         <h1 className="text-[#f3f3f7] text-2xl font-semibold">CONTACTO</h1>
-        <p className="md:items-center text-[#f3f3f7] md:justify-center text-md font-medium cursor-pointer">
+        <a href='agustin_casal@outlook.com'><p className="md:items-center text-[#f3f3f7] md:justify-center text-md font-medium cursor-pointer">
           agustin_casal@outlook.com
-        </p>
+        </p></a>
         <a href="https://wa.me/message/E3BFDOKO4JSDG1" className="pt-1 text-[#f3f3f7]">
           whatsupp/contacto-mgmt
         </a>
         <div className="flex flex-row pt-3 z-50 space-x-7 text-[#f3f3f7]">
-          <BsInstagram className="text-xl" />
-          <BsSpotify className="text-xl" />
-          <SiBeatport className="text-xl" />
-          <BsTiktok className="text-xl" />
-          <SiThreads className="text-xl" />
-          <IoLogoYoutube className="text-xl" />
+        <a href='https://www.instagram.com/lez.flp/'><BsInstagram className="text-xl" /></a>
+        <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className="text-xl" /></a>
+        <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className="text-xl" /></a>
+        <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className="text-xl" /></a>
+        <a href='https://www.threads.net/@lez.flp'><SiThreads className="text-xl" /></a>
+        <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className="text-xl" /></a>
         </div>
       </div>
     </motion.div>
