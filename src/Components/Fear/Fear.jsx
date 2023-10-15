@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Fear = () => {
   const [showImage, setShowImage] = useState(false);
@@ -32,7 +31,6 @@ const Fear = () => {
 
       {showImage && (
         <>
-          <Link to="/fear">Ir a la sección de Fear</Link>
           <img
             src="src/assets/FEARLOGO.png"
             alt="Imagen"
