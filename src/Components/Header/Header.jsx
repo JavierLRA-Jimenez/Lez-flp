@@ -4,6 +4,8 @@ import { Link } from 'react-scroll';
 import { RiMenuUnfoldFill } from 'react-icons/ri';
 import { MdOutlineCancel } from 'react-icons/md';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
 
 // social media
 import { BsInstagram } from 'react-icons/bs';
@@ -12,6 +14,7 @@ import { BsSpotify} from 'react-icons/bs';
 import { SiThreads } from 'react-icons/si';
 import { SiBeatport } from 'react-icons/si';
 import { IoLogoYoutube } from 'react-icons/io';
+import {GiPumpkinMask} from 'react-icons/Gi'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -97,6 +100,7 @@ const Header = () => {
             <SiBeatport className='cursor-pointer' />
             <BsTiktok className='cursor-pointer' />
             <SiThreads className='cursor-pointer' />
+            <Link to="/fear"><GiPumpkinMask/></Link>
             <IoLogoYoutube className='cursor-pointer' />
           </div>
         </div>
@@ -133,6 +137,7 @@ const Header = () => {
           <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className='cursor-pointer' /></a>
           <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className='cursor-pointer' /></a>
           <a href='https://www.threads.net/@lez.flp'><SiThreads className='cursor-pointer'/></a>
+          <Link to="/fear"><GiPumpkinMask/></Link>
           <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer'/></a>
         </div>
       )}
