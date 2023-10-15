@@ -14,7 +14,7 @@ import { BsSpotify} from 'react-icons/bs';
 import { SiThreads } from 'react-icons/si';
 import { SiBeatport } from 'react-icons/si';
 import { IoLogoYoutube } from 'react-icons/io';
-import {GiPumpkinMask} from 'react-icons/Gi'
+import {GiPumpkinMask} from 'react-icons/gi'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
