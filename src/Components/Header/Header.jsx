@@ -15,6 +15,7 @@ import { SiBeatport } from 'react-icons/si';
 import { IoLogoYoutube } from 'react-icons/io';
 import {GiPumpkinMask} from 'react-icons/gi'
 
+
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const isMobile = window.innerWidth <= 768;
@@ -99,7 +100,7 @@ const Header = () => {
             <SiBeatport className='cursor-pointer' />
             <BsTiktok className='cursor-pointer' />
             <SiThreads className='cursor-pointer' />
-            <GiPumpkinMask className='cursor-pointer'/>
+            <Link to="/fear"><GiPumpkinMask className='cursor-pointer'/></Link>
             <IoLogoYoutube className='cursor-pointer' />
           </div>
         </div>
@@ -136,7 +137,7 @@ const Header = () => {
           <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className='cursor-pointer' /></a>
           <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className='cursor-pointer' /></a>
           <a href='https://www.threads.net/@lez.flp'><SiThreads className='cursor-pointer'/></a>
-          <GiPumpkinMask className='cursor-pointer'/>
+          <Link to="/fear"><GiPumpkinMask className='cursor-pointer'/></Link>
           <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer'/></a>
         </div>
       )}
