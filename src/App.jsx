@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
-import Switch from "react-router-dom/Switch";
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Container from './Components/Container';
 import Fear from './Components/Fear/Fear';
 
