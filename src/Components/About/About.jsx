@@ -47,10 +47,10 @@ const About = () => {
       </div>
 
       <div className="flex flex-col md:w-[50%] sm:w-full md:pl-[7rem] pl-3 pt-5">
-        <h1 className="text-[#f3f3f7] text-2xl font-semibold">CONTACTO</h1>
-        <a href='agustin_casal@outlook.com'><p className="md:items-center text-[#f3f3f7] md:justify-center text-md font-medium cursor-pointer">
-          agustin_casal@outlook.com
-        </p></a>
+        <h1 className="text-[rgb(243,243,247)] text-2xl font-semibold">CONTACTO</h1>
+        <a href="https://mail.google.com/mail/?view=cm&to=agustin_casal@outlook.com" className="md:items-center text-[#f3f3f7] md:justify-center text-md font-medium cursor-pointer no-underline" target="_blank" data-href="https://mail.google.com/mail/?view=cm&to=agustin_casal@outlook.com">
+        agustin_casal@outlook.com
+</a>
         <a href="https://wa.me/message/E3BFDOKO4JSDG1" className="pt-1 text-[#f3f3f7]">
           whatsupp/contacto-mgmt
         </a>
