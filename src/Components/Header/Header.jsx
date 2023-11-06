@@ -92,6 +92,7 @@ const Header = () => {
           <Link to="contact" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer'>
             CONTACTO
           </Link>
+          
 
           {/* Iconos de redes sociales para pantallas pequeñas */}
           <div className='flex items-center md:space-x-7 space-x-5 text-white md:mr-[13rem]'>
@@ -100,7 +101,7 @@ const Header = () => {
             <SiBeatport className='cursor-pointer' />
             <BsTiktok className='cursor-pointer' />
             <SiThreads className='cursor-pointer' />
-            {/*<GiPumpkinMask className='cursor-pointer'/>*/}
+            <GiPumpkinMask className='cursor-pointer' onClick={() => window.location.href = "/fear"}/>
             <IoLogoYoutube className='cursor-pointer' />
           </div>
         </div>
@@ -126,6 +127,7 @@ const Header = () => {
     <Link to="contact" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
       CONTACTO
     </Link>
+
   </nav>
 )}
 
@@ -137,7 +139,7 @@ const Header = () => {
           <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className='cursor-pointer' /></a>
           <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className='cursor-pointer' /></a>
           <a href='https://www.threads.net/@lez.flp'><SiThreads className='cursor-pointer'/></a>
-          {/*<GiPumpkinMask className='cursor-pointer'/>*/}
+          <GiPumpkinMask className='cursor-pointer' onClick={() => window.location.href = "/fear"}/>
           <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer'/></a>
         </div>
       )}
