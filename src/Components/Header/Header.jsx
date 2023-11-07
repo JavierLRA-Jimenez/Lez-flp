@@ -101,13 +101,7 @@ const Header = () => {
             <SiBeatport className='cursor-pointer' />
             <BsTiktok className='cursor-pointer' />
             <SiThreads className='cursor-pointer' />
-            <GiPumpkinMask
-    className='cursor-pointer'
-    onClick={(event) => {
-      event.preventDefault();
-      window.open('_fear.html', '_blank');
-    }}
-  />
+            <GiPumpkinMask className='cursor-pointer' onClick={openFearSection} />
             <IoLogoYoutube className='cursor-pointer' />
           </div>
         </div>
@@ -145,13 +139,7 @@ const Header = () => {
           <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className='cursor-pointer' /></a>
           <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className='cursor-pointer' /></a>
           <a href='https://www.threads.net/@lez.flp'><SiThreads className='cursor-pointer'/></a>
-          <GiPumpkinMask
-    className='cursor-pointer'
-    onClick={(event) => {
-      event.preventDefault();
-      window.open('_fear.html', '_blank');
-    }}
-  />
+          <GiPumpkinMask className='cursor-pointer' />
           <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer'/></a>
         </div>
       )}
