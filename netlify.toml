@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/Fear"
-  to = "/Fear/index.html"
-  status = 302
+from = "/*"
+to = "/Fear.html"
+status = 200
