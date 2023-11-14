@@ -2,28 +2,30 @@ import axios from 'axios';
 
 const getVideoUrl = async () => {
   const response = await axios.get(
-    'https://api.netlify.com/api/v1/sites/107cbfd1-87ae-4fed-87c3-228932d12519/functions/upload/assets/FearVideo.mp4',
+    'https://api.github.com/repos/JavierLRA-Jimenez/Lez-flp.github.io/contents/FearVideo.mp4',
   );
 
-  return response.data.url;
+  if (response.status === 200) {
+    return response.data.url;
+  } else {
+    return null;
+  }
 };
 
 const Fear = () => {
-  const [showImage, setShowImage] = useState(false);
+  const [videoUrl, setVideoUrl] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowImage(true);
+      setVideoUrl(getVideoUrl());
     }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
 
-  const videoUrl = getVideoUrl();
-
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
-      <video
+    <div>
+      {videoUrl && <video
         autoPlay
         loop
         muted
@@ -37,7 +39,7 @@ const Fear = () => {
         }}
       >
         <source src={videoUrl} type="video/mp4" />
-      </video>
+      </video>}
     </div>
   );
 };
