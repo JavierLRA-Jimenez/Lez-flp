@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const getVideoUrl = async () => {
   const response = await axios.get(
-    'https://api.github.com/repos/JavierLRA-Jimenez/Lez-flp.github.io/contents/FearVideo.mp4',
+    'https://api.github.com/repos/JavierLRA-Jimenez/Lez-flp.github.io/contents/FearVideo.mp4?ref=master',
   );
 
   if (response.status === 200) {
