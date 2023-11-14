@@ -1,4 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const getVideoUrl = async () => {
+  const response = await axios.get(
+    'https://api.netlify.com/api/v1/sites/107cbfd1-87ae-4fed-87c3-228932d12519/functions/upload/assets/FearVideo.mp4',
+  );
+
+  return response.data.url;
+};
 
 const Fear = () => {
   const [showImage, setShowImage] = useState(false);
@@ -10,6 +18,8 @@ const Fear = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const videoUrl = getVideoUrl();
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
@@ -26,10 +36,10 @@ const Fear = () => {
           objectFit: 'cover',
         }}
       >
-        <source src={`${process.env.PUBLIC_URL}/assets/FearVideo.mp4`} type="video/mp4" />
+        <source src={videoUrl} type="video/mp4" />
       </video>
     </div>
   );
-}
+};
 
 export default Fear;
