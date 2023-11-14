@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "/src\Components\Fear\Fear.jsx"
+to = "/index.html"
 status = 200
