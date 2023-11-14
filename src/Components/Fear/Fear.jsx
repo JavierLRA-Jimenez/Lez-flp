@@ -1,32 +1,9 @@
-import axios from 'axios';
 import React from 'react';
 
-const getVideoUrl = async () => {
-  const response = await axios.get(
-    'https://api.github.com/repos/JavierLRA-Jimenez/Lez-flp.github.io/contents/FearVideo.mp4?ref=master',
-  );
-
-  if (response.status === 200) {
-    return response.data.url;
-  } else {
-    return null;
-  }
-};
-
 const Fear = () => {
-  const [videoUrl, setVideoUrl] = useState(null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setVideoUrl(getVideoUrl());
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div>
-      {videoUrl && <video
+    <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
+      <video
         autoPlay
         loop
         muted
@@ -39,10 +16,10 @@ const Fear = () => {
           objectFit: 'cover',
         }}
       >
-        <source src={videoUrl} type="video/mp4" />
-      </video>}
+        <source src="src/assets/FearVideo.mp4" type="video/mp4" />
+      </video>
     </div>
   );
-};
+}
 
 export default Fear;
