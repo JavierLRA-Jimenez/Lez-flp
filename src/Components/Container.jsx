@@ -75,7 +75,7 @@ const Container = () => {
         </Section>
       </Element>
       <Footer />
-      <Link to="/Carousel" className=' text-red-600 font-bold text-xl'>Ir a Miedo</Link>
+      <Link to="/Fear" className=' text-red-600 font-bold text-xl'>Ir a Miedo</Link>
     </div>
   );
 };
