@@ -4,7 +4,9 @@ import video from '../../assets/Fear.mp4'
 const Fear = () => {
   return (
     <div>
-      <video src={video} type="video/mp4" controls autoplay />
+      <video autoPlay muted loop controls>
+  <source src={video} type="video/mp4" />
+</video>
     </div>
   );
 }
