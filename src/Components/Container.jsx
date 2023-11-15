@@ -7,6 +7,7 @@ import Spotify from './Spotify/Spotify';
 import Youtube from './Spotify/Youtube';
 import SocialNetwork from './Photo/Photo';
 import Footer from './Footer/Footer';
+import { Link } from 'react-router-dom';
 
 const Section = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -74,6 +75,7 @@ const Container = () => {
         </Section>
       </Element>
       <Footer />
+      <Link to="/Fear" className=' text-red-600 font-bold text-xl'>Ir a Miedo</Link>
     </div>
   );
 };
