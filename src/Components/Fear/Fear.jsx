@@ -1,7 +1,6 @@
 import React from 'react';
-import Fear from '../../assets/Fear.mp4'// Importa el video
 
-const NewSection = () => {
+const Fear = () => {
   return (
     <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
       <video
@@ -17,7 +16,7 @@ const NewSection = () => {
           objectFit: 'cover',
         }}
       >
-        <source src={Fear} type="video/mp4" /> {/* Usa el video importado */}
+        <source src="/assets/FearVideo.mp4" type="video/mp4" />
       </video>
     </div>
   );
