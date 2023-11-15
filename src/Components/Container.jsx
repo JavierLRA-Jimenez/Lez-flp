@@ -8,6 +8,7 @@ import Youtube from './Spotify/Youtube';
 import SocialNetwork from './Photo/Photo';
 import Footer from './Footer/Footer';
 import { Link } from 'react-router-dom';
+import Fear from './Fear/Fear';
 
 const Section = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,6 +76,7 @@ const Container = () => {
         </Section>
       </Element>
       <Footer />
+      <Fear/>
       <Link to="/Header" className=' text-red-600 font-bold text-xl'>Header</Link>
       <Link to="/Fear" className=' text-blue-400 font-bold text-xl'>Fear</Link>
     </div>

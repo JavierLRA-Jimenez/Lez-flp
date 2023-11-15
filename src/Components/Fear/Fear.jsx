@@ -1,9 +1,7 @@
 import React from 'react';
+import FearVideo from './assets/FearVideo.mp4'; // Importa el video
 
-const Fear = () => {
-  // La ruta base de la subpágina
-  const basePath = '/Fear'; // Ajusta la ruta base según tu estructura de carpetas
-
+const NewSection = () => {
   return (
     <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
       <video
@@ -19,8 +17,7 @@ const Fear = () => {
           objectFit: 'cover',
         }}
       >
-        <source src={`${basePath}/src/assets/FearVideo.mp4`} type="video/mp4" />
-        {/* Asegúrate de ajustar la ruta del video */}
+        <source src={FearVideo} type="video/mp4" /> {/* Usa el video importado */}
       </video>
     </div>
   );
