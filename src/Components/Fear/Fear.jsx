@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Fear = () => {
+  // La ruta base de la subpágina
+  const basePath = '/Fear'; // Ajusta la ruta base según tu estructura de carpetas
+
   return (
     <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
       <video
@@ -16,8 +19,8 @@ const Fear = () => {
           objectFit: 'cover',
         }}
       >
-        <source src="/src/assets/FearVideo.mp4" type="video/mp4" />
-        
+        <source src={`${basePath}/src/assets/FearVideo.mp4`} type="video/mp4" />
+        {/* Asegúrate de ajustar la ruta del video */}
       </video>
     </div>
   );
