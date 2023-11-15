@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Container from './Components/Container';
-import Fear from './Components/Fear/Fear';
+import Carousel from './Components/Carousel/Carousel';
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Container />} />
-        <Route path="/Fear" element={<Fear />} />
+        <Route path="/Carousel" element={<Carousel />} />
       </Routes>
     </Router>
   );
