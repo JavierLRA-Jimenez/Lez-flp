@@ -16,7 +16,8 @@ const Fear = () => {
           objectFit: 'cover',
         }}
       >
-        <source src="src/assets/Components/Fear/FearVideo.mp4" type="video/mp4" />
+        <source src="/assets/FearVideo.mp4" type="video/mp4" />
+
       </video>
     </div>
   );
