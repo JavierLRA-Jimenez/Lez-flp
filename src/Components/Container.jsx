@@ -77,7 +77,6 @@ const Container = () => {
       </Element>
       <Footer />
       <Fear/>
-      <Link to="/Header" className=' text-red-600 font-bold text-xl'>Header</Link>
       <Link to="/Fear" className=' text-blue-400 font-bold text-xl'>Fear</Link>
     </div>
   );
