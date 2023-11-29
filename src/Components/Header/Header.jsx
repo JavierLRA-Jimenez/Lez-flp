@@ -57,9 +57,7 @@ const Header = () => {
 
   return (
     <motion.div className='sticky top-0 z-50 flex items-center justify-center xl:justify-start w-full md:bg-transparent p-2 h-[10vh]'>
-      <div className='w-20 md:h-[60px] md:w-[90px] m-4 p-1 md:ml-[17rem]'>
-        <img src={White} alt="logo lez" className='w-[45%] md:w-[40%] flex m-auto relative md:pt-2' />
-      </div>
+      
 
       {/* Botón para pantallas pequeñas */}
       {isSmallScreen && (
@@ -112,7 +110,10 @@ const Header = () => {
       )}
 
 {!isSmallScreen && (
-  <nav className={`md:bg-transparent w-full md:max-w-sm h-full space-x-7 transform transition-transform duration-700 translate-y-0 flex-1 flex text-white justify-center items-center font-light gap-2 ${showMenu ? 'md:flex-row' : ''} mx-auto md:flex`}>
+  <nav className={`md:bg-transparent w-full h-full space-x-7 transform transition-transform duration-700  translate-y-0 flex-1 flex text-white justify-center items-center font-light gap-2 ${showMenu ? 'md:flex-row' : ''} mx-auto md:flex`}>
+    <div className='w-20 md:h-[60px] md:w-[90px] p-1 '>
+        <img src={White} alt="logo lez" className='w-[45%] md:w-[40%] flex m-auto relative md:pt-2' />
+      </div>
     <Link to="body" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
       HOME
     </Link>
@@ -131,13 +132,8 @@ const Header = () => {
     <Link to="contact" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
       CONTACTO
     </Link>
-
-  </nav>
-)}
-
-      {/* Iconos de redes sociales para pantallas medianas y grandes */}
-      {!isSmallScreen && (
-        <div className='flex items-center md:space-x-6 space-x-5 text-white md:mr-[13rem]'>
+{!isSmallScreen && (
+        <div className='flex items-center md:space-x-6 space-x-5 text-white md:mr-[13rem] '>
           <a href='https://www.instagram.com/lez.flp/'><BsInstagram className='cursor-pointer' /></a>
           <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className='cursor-pointer' /></a>
           <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className='cursor-pointer' /></a>
@@ -149,6 +145,9 @@ const Header = () => {
           <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer'/></a>
         </div>
       )}
+  </nav>
+)}
+      
     </motion.div>
   );
 };
