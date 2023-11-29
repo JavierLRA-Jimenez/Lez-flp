@@ -14,10 +14,6 @@ const Fear = () => {
           style={{ pointerEvents: 'none' }}
         />
       </div>
-      <div className="relative z-10 flex justify-center items-center h-full">
-        {/* Contenido de tu sección */}
-        <h1 className="text-white text-4xl font-bold">Contenido de tu sección</h1>
-      </div>
     </div>
   );
 }
