@@ -1,19 +1,18 @@
 import React from 'react';
-import video from '../../assets/Fear.mp4'
+import Lez from '../../assets/videolez.mp4'
 
 const Fear = () => {
   return (
-    <div className="relative h-screen">
+    <section className="relative h-screen">
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
           loop
           className="md:w-full md:h-full object-cover flex"
-          src={video}
-          style={{ pointerEvents: 'none' }}
-        />
+          src={Lez}
+        ></video>
       </div>
-    </div>
+    </section>
   );
 }
 
