@@ -1,7 +1,0 @@
-/* Fear.css */
-@media (max-width: 767px) { /* Cambia el valor según tus necesidades */
-    .mobile-zoom {
-      transform: scale(1.5); /* Puedes ajustar el valor para controlar el zoom */
-      transition: transform 0.5s ease; /* Agrega una transición suave */
-    }
-  }
