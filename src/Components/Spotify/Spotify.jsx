@@ -5,16 +5,21 @@ import { motion } from "framer-motion";
 const Spotify = () => {
     
       return (
-        <motion.div className='md:h-[45rem] bg-cover bg-center h-scream bg-fixed' style={{ backgroundImage: `url(${party})`}} id='spotify'>
+        <motion.div className='md:h-[70rem] bg-cover bg-center h-scream bg-fixed' style={{ backgroundImage: `url(${party})`}} id='spotify'>
           <div>
             <h2 className='text-4xl p-8 items-center justify-center flex gap-8 text-white'>
               <span className='text-white'>MÚSICA</span></h2>
           </div>
 
-          <div className="flex flex-row flex-wrap md:flex-nowrap  justify-between m-8 pl-10 pr-10">
+          <div className="flex flex-row flex-wrap md:flex-nowrap  justify-between m-10 pl-10 pr-10">
+          <iframe src="https://open.spotify.com/embed/track/2pUgjXRIkAnKnkvmPm1nmu?utm_source=generator&theme=0" className=' h-[25rem] w-full md:w-[20rem] p-2 flex items-center justify-center mb-2 md:md-0' ></iframe>
           <iframe src="https://open.spotify.com/embed/track/4im0pZlNpZXKaUv7zKqbtV?utm_source=generator&theme=0" className=' h-[25rem] w-full md:w-[20rem] p-2 flex items-center justify-center mb-2 md:md-0' ></iframe>
-          <iframe src="https://open.spotify.com/embed/track/46vdDHSv8Des2RTyrsb86N?utm_source=generator&theme=0" className=' h-[25rem] w-full md:w-[20rem] p-2 flex items-center justify-center mb-2 md:md-0' ></iframe>
           <iframe src="https://open.spotify.com/embed/track/5eQpKnYGB3gQGJYRY76ceU?utm_source=generator&theme=0" className=' h-[25rem] w-full md:w-[20rem] p-2 flex items-center justify-center mb-2 md:md-0' ></iframe>
+          </div>
+          <div className="flex flex-row flex-wrap md:flex-nowrap  justify-between m-10 pl-10 pr-10">
+          <iframe src="https://open.spotify.com/embed/track/1VodGnPTB2lEzOOa7L7Yk9?utm_source=generator&theme=0" className=' h-[25rem] w-full md:w-[20rem] p-2 flex items-center justify-center mb-2 md:md-0' ></iframe>
+          <iframe src="https://open.spotify.com/embed/track/46vdDHSv8Des2RTyrsb86N?utm_source=generator&theme=0" className=' h-[25rem] w-full md:w-[20rem] p-2 flex items-center justify-center mb-2 md:md-0' ></iframe>
+          <iframe src="https://open.spotify.com/embed/track/6AMFNs09XFSBcruFyOHwyw?utm_source=generator&theme=0" className=' h-[25rem] w-full md:w-[20rem] p-2 flex items-center justify-center mb-2 md:md-0' ></iframe>
           </div>
           
           <div className='flex flex-col md:flex-row items-center justify-center'>
