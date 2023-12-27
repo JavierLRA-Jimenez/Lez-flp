@@ -1,5 +1,5 @@
 import React from 'react';
-import Lez from '../../assets/videolez.mp4'
+import Video from '../../assets/videolez.mp4';
 
 const Fear = () => {
   return (
@@ -8,12 +8,20 @@ const Fear = () => {
         <video
           autoPlay
           loop
-          className="md:w-full md:h-full object-cover flex"
-          src={Lez}
+          className="md:w-full md:h-full object-cover hidden md:block"
+          src={Video}
         ></video>
+        <div className="md:hidden flex justify-center items-center h-screen">
+          <video
+            autoPlay
+            loop
+            className="h-full object-cover"
+            src={Video}
+          ></video>
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Fear;

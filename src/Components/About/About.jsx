@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <motion.div
-      className="md:h-[55rem] bg-cover bg-center h-scream bg-fixed "
+      className="md:h-[65rem] bg-cover bg-center h-scream bg-fixed "
       style={{ backgroundImage: `url(${mask})` }}
       id="about"
     >
@@ -29,15 +29,34 @@ const About = () => {
         <div className="md:w-[50%] sm:w-full md:order-1">
           <div className="rounded-md md:text-base sm:text-lg sm:justify-items-center pl-3 md:pl-[7rem]">
             <p>
-              Lez es originario de Rosario, Santa Fe, Argentina. Con una trayectoria que inició en el año 2013 y habiendo sido considerado como una promesa en América Latina, Lez ha demostrado ser un DJ y productor versátil capaz de adaptarse a diferentes estilos y tendencias, destacando pronto por su talento y carisma detrás de las consolas. Al mismo tiempo, se formó académicamente en el Instituto Cetear, lo que le permitió ampliar sus conocimientos y habilidades en la producción musical.
+            Lez es originario de Rosario, Santa Fe, Argentina. Con una trayectoria que inició en el año
+2013 y siendo considerado como una promesa en América Latina, Lez ha demostrado ser
+un DJ y productor versátil capaz de adaptarse a diferentes estilos y tendencias, destacando
+rápidamente por su talento y carisma detrás de las consolas. Al mismo tiempo, se formó
+académicamente en el Instituto Cetear, lo que le permitió ampliar sus conocimientos y
+habilidades en la producción musical. 
             </p>
             <br />
             <p>
-              Su talento y habilidades le han permitido presentarse en distintos clubs y eventos de la escena nocturna de Rosario, como Coyote Iglú, Barracao, Complejo Awas, Costello, Madame, Metropolitano Rosario, entre otros. Durante su carrera ha compartido cabina con grandes artistas de la escena electrónica, incluyendo a Ice Machine, Gastón Garay, Nacho Scoppa, Zone7, Cadelago, entre otros.
+            Su talento y habilidades le han permitido presentarse en distintos clubs y eventos de la
+escena nocturna de Rosario, como Coyote Iglú, Barracao, Complejo Awas, Costello,
+Madame, Metropolitano Rosario, entre otros. Durante su carrera ha compartido cabina con
+grandes artistas de la escena electrónica, incluyendo a Nacho Scoppa, Zone7, Cadelago,
+Caitto, FRANCO BA, entre otros.
             </p>
             <br />
             <p>
-              Actualmente, Lez está enfocado en sus propias producciones musicales y en crecer artísticamente. Sus producciones lo han llevado a lograr colaboraciones con otros artistas como Jean Bacarreza (conocido hoy en día como Bakka), Zone7, SUPER (ARG) y otros talentos destacados de la escena electrónica. Además, trabaja en conjunto con LEVELS, su equipo de trabajo que lo guía en su carrera y forma parte de su booking de artistas.
+            Su música ha resonado en diversos lugares en todo el país. Sin embargo, lo más destacado
+es que sus canciones han sonado en reconocidos clubes de Buenos Aires, como Club 69,
+Crobar y Rio Electronic Music, lugares emblemáticos que han sido testigos del impacto de
+su música en la escena electrónica local.
+            </p>
+            <br />
+            <p>
+            Actualmente, Lez está enfocado en sus propias producciones musicales y en su crecimiento
+artístico. Lo que ha llevado a lograr colaboraciones con otros artistas como Jean Bacarreza
+(conocido hoy en día como Bakka), Zone7, SUPER (ARG), Juan (AR) y otros talentos
+destacados de la escena electrónica.
             </p>
             <br />
             <br />

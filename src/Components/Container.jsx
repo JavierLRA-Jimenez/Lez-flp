@@ -7,6 +7,7 @@ import Spotify from './Spotify/Spotify';
 import Youtube from './Spotify/Youtube';
 import SocialNetwork from './Photo/Photo';
 import Footer from './Footer/Footer';
+import Icon from './icono';
 
 const Section = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -73,6 +74,7 @@ const Container = () => {
           <About id="about" />
         </Section>
       </Element>
+      <Icon/>
       <Footer />
     </div>
   );
