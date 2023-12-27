@@ -4,10 +4,10 @@ import { GiPumpkinMask } from 'react-icons/gi';
 
 const icono = () => {
   return (
-    <section className="flex justify-center items-center h-[18rem]">
+    <section className="flex justify-center items-center h-[17rem]">
       <RouterLink to="/Fear">
         <div className="flex justify-center items-center">
-          <GiPumpkinMask className="text-red-700 w-24 h-24 md:w-52 md:h-52" />
+          <GiPumpkinMask className="text-red-700 w-24 h-24 md:w-48 md:h-48" />
         </div>
       </RouterLink>
     </section>
