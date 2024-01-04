@@ -142,7 +142,7 @@ const Contact = () => {
   };
  
    return (
-     <motion.div className='md:h-[60rem]'>
+     <motion.div className='md:h-[60rem] h-[33rem]'>
        <div>
          <h2 className='text-4xl p-8 items-center justify-center flex gap-8 text-white' id='fotos'>FOTOS</h2>
        </div>

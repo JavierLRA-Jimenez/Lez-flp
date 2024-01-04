@@ -12,11 +12,11 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <motion.div
-      className="md:h-[65rem] bg-cover bg-center h-scream bg-fixed "
+      className="md:h-[65rem] bg-cover bg-center  bg-fixed "
       style={{ backgroundImage: `url(${mask})` }}
       id="about"
     >
-      <h1 className="text-4xl p-8 items-center justify-center flex gap-8 text-white z-99 pt-20">
+      <h1 className="text-4xl p-8 items-center justify-center flex gap-8 text-white z-99 ">
         BIOGRAFÍA
       </h1>
 
