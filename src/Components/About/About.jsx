@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <motion.div
-      className="md:h-[65rem] bg-cover bg-center  bg-fixed "
+      className="md:h-[60rem] bg-cover bg-center  bg-fixed "
       style={{ backgroundImage: `url(${mask})` }}
       id="about"
     >
@@ -20,7 +20,7 @@ const About = () => {
         BIOGRAFÍA
       </h1>
 
-      <div className="flex flex-col-reverse md:flex-row text-white md:pt-20 pt-10">
+      <div className="flex flex-col-reverse md:flex-row text-white md:pt-20 pt-10 ">
         <div className="md:w-[50%] sm:w-full md:order-2">
           <div className="md:w-[31rem] md:pl-[10rem] w-[18rem] pl-3">
             <img src={infierno} alt="Infierno" className="rounded-xl" />
@@ -65,21 +65,14 @@ destacados de la escena electrónica.
         </div>
       </div>
 
-      <div className="flex flex-col md:w-[50%] sm:w-full md:pl-[7rem] pl-3 pt-5">
-        <h1 className="text-[rgb(243,243,247)] text-2xl font-semibold">CONTACTO</h1>
-        <a href="https://mail.google.com/mail/?view=cm&to=agustin_casal@outlook.com" className="md:items-center text-[#f3f3f7] md:justify-center text-md font-medium cursor-pointer no-underline" target="_blank" data-href="https://mail.google.com/mail/?view=cm&to=agustin_casal@outlook.com">
-        agustin_casal@outlook.com
-</a>
-        <a href="https://wa.me/message/E3BFDOKO4JSDG1" className="pt-1 text-[#f3f3f7]">
-          whatsupp/contacto-mgmt
-        </a>
+      <div className="flex flex-col md:w-[50%] sm:w-full md:pl-[7rem] pl-3 pt-5 lg:justify-center lg:items-center lg:w-auto lg:mt-20 lg:pl-0">
         <div className="flex flex-row pt-3 z-50 space-x-7 text-[#f3f3f7]">
-        <a href='https://www.instagram.com/lez.flp/'><BsInstagram className="text-xl" /></a>
-        <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className="text-xl" /></a>
-        <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className="text-xl" /></a>
-        <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className="text-xl" /></a>
-        <a href='https://www.threads.net/@lez.flp'><SiThreads className="text-xl" /></a>
-        <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className="text-xl" /></a>
+        <a href='https://www.instagram.com/lez.flp/'><BsInstagram className="md:text-xl " /></a>
+        <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className="md:text-xl " /></a>
+        <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className="text-xl " /></a>
+        <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className="md:text-xl  " /></a>
+        <a href='https://www.threads.net/@lez.flp'><SiThreads className="md:text-xl " /></a>
+        <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className="text-xl " /></a>
         </div>
       </div>
     </motion.div>

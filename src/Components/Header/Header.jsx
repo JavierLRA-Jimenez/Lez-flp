@@ -88,11 +88,7 @@ const Header = () => {
           </Link>
           <Link to="about" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer'>
             BIOGRAFÍA
-          </Link>
-          <Link to="contact" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer'>
-            CONTACTO
-          </Link>
-          
+          </Link>       
 
           {/* Iconos de redes sociales para pantallas pequeñas */}
           <div className='flex items-center md:space-x-7 space-x-5 text-white md:mr-[13rem]'>
@@ -128,9 +124,6 @@ const Header = () => {
     </Link>
     <Link to="about" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
       BIOGRAFÍA
-    </Link>
-    <Link to="contact" spy={true} smooth={true} duration={500} onClick={closeMenu} className='cursor-pointer my-1'>
-      CONTACTO
     </Link>
 {!isSmallScreen && (
         <div className='flex items-center md:space-x-6 space-x-5 text-white md:mr-[13rem] '>

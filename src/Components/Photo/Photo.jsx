@@ -115,7 +115,7 @@ const Contact = () => {
    const secondCarouselSlidesToShow = isSmallScreen ? 2 : 4;
  
    const firstCarouselSettings = {
-     dots: true,
+     dots: false,
      infinite: true,
      speed: 500,
      slidesToShow: firstCarouselSlidesToShow,
@@ -123,7 +123,7 @@ const Contact = () => {
    };
  
    const secondCarouselSettings = {
-     dots: true,
+     dots: false,
      infinite: true,
      speed: 500,
      slidesToShow: secondCarouselSlidesToShow,
@@ -131,22 +131,26 @@ const Contact = () => {
    };
  
    const sliderStyle = {
-    width: '80%',
+    width:  isSmallScreen ? '90%' : (window.innerWidth >= 2560 && window.innerHeight >= 1440) ? '55%' : '90%',
     margin: '0 auto',
-    padding: '0 20px', // Agregar un relleno para compensar el margen negativo
-  };
+    padding: '0 10px', // Agregar un relleno para compensar el margen negativo
+};
   
   const imageStyle = {
-    width: '80%',
-    margin: '0 24px', // Aplicar margen negativo a las imágenes
+    width: isSmallScreen ? '70%' : '80%',
+    margin: '0 20px', // Aplicar margen negativo a las imágenes
   };
+  
+
+  
  
    return (
-     <motion.div className='md:h-[60rem] h-[33rem]'>
+     <motion.div className='md:h-[60rem] lg:h-[65rem] h-[33rem]'>
        <div>
          <h2 className='text-4xl p-8 items-center justify-center flex gap-8 text-white' id='fotos'>FOTOS</h2>
        </div>
-       <Slider {...firstCarouselSettings} style={sliderStyle} className='pt-6'>
+       <div className='lg:pt-20'>
+       <Slider {...firstCarouselSettings} style={sliderStyle} className='pt-6 '>
          {firstCarouselImages.map((image, index) => (
            <div key={index}>
              <img src={image} alt={`Image ${index}`} style={imageStyle} />
@@ -163,6 +167,7 @@ const Contact = () => {
            </div>
          ))}
        </Slider>
+       </div>
      </motion.div>
    );
  };
