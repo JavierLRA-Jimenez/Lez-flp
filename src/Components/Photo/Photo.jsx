@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import v1 from '../../assets/Vertical/1V.webp'
 import v2 from '../../assets/Vertical/2V.webp'
 import v4 from '../../assets/Vertical/4V.webp'
 import v5 from '../../assets/Vertical/5V.webp'
@@ -55,28 +54,18 @@ import { useMediaQuery } from '@react-hook/media-query';
 
 const Contact = () => {
   const images = [
-    v1,
     v2,
     v4,
-    v5,
     v6,
-    v7,
     v8, 
-    v9, 
-    v10, 
-    v11, 
     v12,
     v13,
-    v14,
     v15,
-    v16,
-    v17,
     v18,
     v19,
     v20,
     v21,
     v22,
-    v23,
     v24,
     h1,
     h2,
@@ -84,8 +73,7 @@ const Contact = () => {
     h4,
     h5,
     h6,
-    h7,
-    h8, 
+    h7, 
     h9, 
     h10, 
     h11, 
@@ -93,8 +81,7 @@ const Contact = () => {
     h13,
     h14,
     h15,
-    h16,
-    h17,
+
     h18,
     h19,
     h20,
@@ -131,7 +118,7 @@ const Contact = () => {
    };
  
    const sliderStyle = {
-    width:  isSmallScreen ? '90%' : (window.innerWidth >= 2560 && window.innerHeight >= 1440) ? '55%' : '90%',
+    width:  isSmallScreen ? '90%' : (window.innerWidth >= 2560 && window.innerHeight >= 1080) ? '55%' : '90%',
     margin: '0 auto',
     padding: '0 10px', // Agregar un relleno para compensar el margen negativo
 };

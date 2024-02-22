@@ -49,11 +49,8 @@ const Container = () => {
   return (
     <div>
       <Header />
-      <Element name="body">
-        <Section>
-          <Body id="body" />
-        </Section>
-      </Element>
+      <Body />
+
       <Element name="spotify">
         <Section>
           <Spotify id="spotify" />
