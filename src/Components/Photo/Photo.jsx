@@ -89,7 +89,7 @@ const Contact = () => {
    const secondCarouselSlidesToShow = isSmallScreen ? 2 : 4;
  
    const [sliderStyle, setSliderStyle] = useState({
-     width: '90%',
+     width: '80%',
      margin: '0 auto',
      padding: '0 10px',
    });
@@ -106,7 +106,7 @@ const Contact = () => {
  
        if (screenWidth >= 2560 && screenHeight >= 1080) {
          setSliderStyle({
-           width: '55%',
+           width: '40%',
            margin: '0 auto',
            padding: '0 10px',
          });
