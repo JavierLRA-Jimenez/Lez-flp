@@ -104,7 +104,7 @@ const Contact = () => {
        const screenWidth = window.innerWidth;
        const screenHeight = window.innerHeight;
  
-       if (screenWidth >= 2560 && screenHeight >= 1080) {
+       if (screenWidth >= 1999 && screenHeight >= 900) {
          setSliderStyle({
            width: '40%',
            margin: '0 auto',
