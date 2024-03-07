@@ -3,36 +3,21 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import v1 from '../../assets/Vertical/1V.webp'
 import v2 from '../../assets/Vertical/2V.webp'
+import v3 from '../../assets/Vertical/3V.webp'
 import v4 from '../../assets/Vertical/4V.webp'
+import v5 from '../../assets/Vertical/5V.webp'
 import v6 from '../../assets/Vertical/6V.webp'
-import v8 from '../../assets/Vertical/8V.webp'
 import v12 from '../../assets/Vertical/12v.webp'
-import v13 from '../../assets/Vertical/13v.webp'
-import v15 from '../../assets/Vertical/15v.webp'
 import v18 from '../../assets/Vertical/18v.webp'
-import v19 from '../../assets/Vertical/19v.webp'
 import v20 from '../../assets/Vertical/20V.webp'
-import v21 from '../../assets/Vertical/21v.webp'
 import v22 from '../../assets/Vertical/22v.webp'
-import v24 from '../../assets/Vertical/24V.webp'
 
 import h1 from '../../assets/Horizontal/H1.webp'
-import h2 from '../../assets/Horizontal/H2.webp'
-import h3 from '../../assets/Horizontal/H3.webp'
-import h4 from '../../assets/Horizontal/H4.webp'
 import h5 from '../../assets/Horizontal/H5.webp'
-import h6 from '../../assets/Horizontal/H6.webp'
-import h7 from '../../assets/Horizontal/H7.webp'
-import h9 from '../../assets/Horizontal/H9.webp'
-import h10 from '../../assets/Horizontal/H10.webp'
-import h11 from '../../assets/Horizontal/H11.webp'
-import h12 from '../../assets/Horizontal/H12.webp'
 import h13 from '../../assets/Horizontal/H13.webp'
-import h14 from '../../assets/Horizontal/H14.webp'
-import h15 from '../../assets/Horizontal/H15.webp'
 import h18 from '../../assets/Horizontal/H18.webp'
-import h19 from '../../assets/Horizontal/H19.webp'
 import h20 from '../../assets/Horizontal/H20.webp'
 import h21 from '../../assets/Horizontal/H21.webp'
 import h22 from '../../assets/Horizontal/H22.webp'
@@ -42,35 +27,21 @@ import { useMedia } from 'react-use';
 
 const Contact = () => {
   const images = [
+    v1,
     v2,
+    v3,
     v4,
+    v5,
     v6,
-    v8, 
     v12,
-    v13,
-    v15,
     v18,
-    v19,
     v20,
-    v21,
     v22,
-    v24,
+
     h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    h7, 
-    h9, 
-    h10, 
-    h11, 
-    h12,
+    h5, 
     h13,
-    h14,
-    h15,
     h18,
-    h19,
     h20,
     h21,
     h22,
@@ -78,8 +49,8 @@ const Contact = () => {
   ];
 
    // Dividir el array de imágenes en dos
-   const firstCarouselImages = images.slice(13, 32); // Mostrar 2 imágenes en el primer carrusel
-   const secondCarouselImages = images.slice(0, 12); // Mostrar 4 imágenes en el segundo carrusel
+   const firstCarouselImages = images.slice(10, 17); // Mostrar 2 imágenes en el primer carrusel
+   const secondCarouselImages = images.slice(0, 9); // Mostrar 4 imágenes en el segundo carrusel
  
    // Detectar el tamaño de la pantalla
    const isSmallScreen = useMedia('(max-width: 640px)'); // Cambia el valor según tu breakpoint

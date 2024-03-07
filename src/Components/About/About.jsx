@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import infierno from '../../assets/Industrial.jpg';
 import mask from '../../assets/maskgrislez.jpg';
 import { BsInstagram } from 'react-icons/bs';
@@ -10,6 +10,49 @@ import { IoLogoYoutube } from 'react-icons/io';
 import { motion } from 'framer-motion';
 
 const About = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(
+    window.innerWidth >= 1999 && window.innerHeight >= 900
+  );
+
+  const [sliderStyle, setSliderStyle] = useState({
+    width: '90%',
+    margin: '0 auto',
+    padding: '0 10px',
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+
+      if (screenWidth >= 1999 && screenHeight >= 900) {
+        setSliderStyle({
+          marginLeft: '40rem',
+          margin: '0 auto',
+          padding: '0 40px', // Cambiado a 40px para pantallas grandes
+        });
+      } else {
+        setSliderStyle({
+          margin: '0 auto',
+          padding: '0 10px',
+        });
+      }
+
+      setIsLargeScreen(screenWidth >= 1999 && screenHeight >= 900);
+    };
+
+    // Llamamos a la función una vez para establecer los estilos iniciales
+    handleResize();
+
+    // Agregamos el event listener para actualizar los estilos cuando cambie el tamaño de la ventana
+    window.addEventListener('resize', handleResize);
+
+    // Limpieza del event listener al desmontar el componente
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+
   return (
     <motion.div
       className="md:h-[60rem] bg-cover bg-center  bg-fixed "
@@ -20,14 +63,14 @@ const About = () => {
         BIOGRAFÍA
       </h1>
 
-      <div className="flex flex-col-reverse md:flex-row text-white md:pt-20 pt-10 ">
+      <div className="flex flex-col-reverse md:flex-row text-white md:pt-20 pt-10">
         <div className="md:w-[50%] sm:w-full md:order-2">
           <div className="md:w-[31rem] md:pl-[10rem] w-[18rem] pl-3">
             <img src={infierno} alt="Infierno" className="rounded-xl" />
           </div>
         </div>
         <div className="md:w-[50%] sm:w-full md:order-1">
-          <div className="rounded-md md:text-base sm:text-lg sm:justify-items-center pl-3 md:pl-[7rem]">
+        <div className={`rounded-md md:text-base sm:text-lg sm:justify-items-center pl-3 md:ml-[10rem]`} style={sliderStyle}>
             <p>
             Lez es originario de Rosario, Santa Fe, Argentina. Con una trayectoria que inició en el año
 2013 y siendo considerado como una promesa en América Latina, Lez ha demostrado ser
