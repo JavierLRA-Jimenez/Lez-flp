@@ -4,7 +4,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import v1 from '../../assets/Vertical/1V.webp'
-import v2 from '../../assets/Vertical/2V.webp'
 import v3 from '../../assets/Vertical/3V.webp'
 import v4 from '../../assets/Vertical/4V.webp'
 import v5 from '../../assets/Vertical/5V.webp'
@@ -19,8 +18,6 @@ import h5 from '../../assets/Horizontal/H5.webp'
 import h13 from '../../assets/Horizontal/H13.webp'
 import h18 from '../../assets/Horizontal/H18.webp'
 import h20 from '../../assets/Horizontal/H20.webp'
-import h21 from '../../assets/Horizontal/H21.webp'
-import h22 from '../../assets/Horizontal/H22.webp'
 import h23 from '../../assets/Horizontal/H23.webp'
 import { motion } from "framer-motion";
 import { useMedia } from 'react-use';
@@ -28,7 +25,6 @@ import { useMedia } from 'react-use';
 const Contact = () => {
   const images = [
     v1,
-    v2,
     v3,
     v4,
     v5,
@@ -43,13 +39,11 @@ const Contact = () => {
     h13,
     h18,
     h20,
-    h21,
-    h22,
     h23,
   ];
 
    // Dividir el array de imágenes en dos
-   const firstCarouselImages = images.slice(10, 17); // Mostrar 2 imágenes en el primer carrusel
+   const firstCarouselImages = images.slice(10, 15); // Mostrar 2 imágenes en el primer carrusel
    const secondCarouselImages = images.slice(0, 9); // Mostrar 4 imágenes en el segundo carrusel
  
    // Detectar el tamaño de la pantalla
