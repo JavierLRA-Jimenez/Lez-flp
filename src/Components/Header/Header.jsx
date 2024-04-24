@@ -92,11 +92,11 @@ const Header = () => {
 
           {/* Iconos de redes sociales para pantallas pequeñas */}
           <div className='flex items-center md:space-x-7 space-x-5 text-white md:mr-[13rem]'>
-            <BsInstagram className='cursor-pointer' />
-            <BsSpotify className='cursor-pointer' />
-            <SiBeatport className='cursor-pointer' />
-            <BsTiktok className='cursor-pointer' />
-            <SiThreads className='cursor-pointer' />
+          <a href='https://www.instagram.com/lez.flp/'><BsInstagram className='cursor-pointer' /></a>
+          <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className='cursor-pointer' /></a>
+          <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className='cursor-pointer' /></a>
+          <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className='cursor-pointer' /></a>
+          <a href='https://www.threads.net/@lez.flp'><SiThreads className='cursor-pointer'/></a>
             <RouterLink to="/Fear">
   <GiPumpkinMask className='cursor-pointer' />
 </RouterLink>
