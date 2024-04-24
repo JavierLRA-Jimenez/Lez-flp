@@ -100,7 +100,7 @@ const Header = () => {
             <RouterLink to="/Fear">
   <GiPumpkinMask className='cursor-pointer' />
 </RouterLink>
-            <IoLogoYoutube className='cursor-pointer' />
+           <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer'/></a>
           </div>
         </div>
       )}
