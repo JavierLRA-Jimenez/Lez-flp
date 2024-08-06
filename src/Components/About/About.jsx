@@ -71,36 +71,28 @@ const About = () => {
           </div>
         </div>
         <div className="md:w-[50%] sm:w-full md:order-1">
-        <div className={`rounded-md md:text-base sm:text-lg sm:justify-items-center pl-3 md:ml-[10rem]`} style={sliderStyle}>
+          <div className={`rounded-md md:text-base sm:text-lg sm:justify-items-center pl-3 md:ml-[10rem]`} style={sliderStyle}>
             <p>
-            Lez es originario de Rosario, Santa Fe, Argentina. Con una trayectoria que inició en el año
-2013 y siendo considerado como una promesa en América Latina, Lez ha demostrado ser
-un DJ y productor versátil capaz de adaptarse a diferentes estilos y tendencias, destacando
-rápidamente por su talento y carisma detrás de las consolas. Al mismo tiempo, se formó
-académicamente en el Instituto Cetear, lo que le permitió ampliar sus conocimientos y
-habilidades en la producción musical. 
+              Lez es un talentoso DJ y productor originario de Argentina. Con una trayectoria que
+              comenzó en 2013, ha demostrado ser una promesa en la escena electrónica de América
+              Latina. Su versatilidad y carisma le han permitido adaptarse a diversos estilos y tendencias
+              musicales, consolidándose como un artista capaz de cautivar al público detrás de las
+              consolas.
             </p>
             <br />
             <p>
-            Su talento y habilidades le han permitido presentarse en distintos clubs y eventos de la
-escena nocturna de Rosario, como Coyote Iglú, Barracao, Complejo Awas, Costello,
-Madame, Metropolitano Rosario, entre otros. Durante su carrera ha compartido cabina con
-grandes artistas de la escena electrónica, incluyendo a Nacho Scoppa, Zone7, Cadelago,
-Caitto, FRANCO BA, entre otros.
+              Con una formación académica en producción musical, Lez ha enriquecido sus
+              conocimientos y habilidades, reflejándose en cada una de sus actuaciones y producciones.
+              Su talento lo ha llevado a presentarse en una amplia variedad de clubes y ciudades a lo
+              largo del país, incluyendo Rosario, Buenos Aires, Santa Fe, entre otras.
             </p>
             <br />
             <p>
-            Su música ha resonado en diversos lugares en todo el país. Sin embargo, lo más destacado
-es que sus canciones han sonado en reconocidos clubes de Buenos Aires, como Club 69,
-Crobar y Rio Electronic Music, lugares emblemáticos que han sido testigos del impacto de
-su música en la escena electrónica local.
-            </p>
-            <br />
-            <p>
-            Actualmente, Lez está enfocado en sus propias producciones musicales y en su crecimiento
-artístico. Lo que ha llevado a lograr colaboraciones con otros artistas como Jean Bacarreza
-(conocido hoy en día como Bakka), Zone7, SUPER (ARG), Juan (AR) y otros talentos
-destacados de la escena electrónica.
+              A lo largo de su trayectoria, Lez ha logrado que su música resuene en lugares
+              emblemáticos de la escena electrónica, marcando su presencia y dejando una huella
+              significativa. Actualmente, está enfocado en sus propias producciones musicales y en su
+              crecimiento artístico, siempre buscando innovar y conectar con su audiencia de manera
+              auténtica y memorable.
             </p>
             <br />
             <br />
@@ -111,12 +103,12 @@ destacados de la escena electrónica.
 
       <div className="flex flex-col md:w-[50%] sm:w-full md:pl-[7rem] pl-3 pt-5 justify-center items-center lg:w-auto lg:mt-20 lg:pl-0">
         <div className="flex flex-row pt-3 z-50 space-x-7 text-[#f3f3f7]">
-        <a href='https://www.instagram.com/lez.flp/'><BsInstagram className="md:text-xl " /></a>
-        <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className="md:text-xl " /></a>
-        <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className="text-xl " /></a>
-        <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className="md:text-xl  " /></a>
-        <a href='https://www.threads.net/@lez.flp'><SiThreads className="md:text-xl " /></a>
-        <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className="text-xl " /></a>
+          <a href='https://www.instagram.com/lez.flp/'><BsInstagram className="md:text-xl "  /></a>
+          <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className="md:text-xl " /></a>
+          <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className="text-xl " /></a>
+          <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className="md:text-xl  " /></a>
+          <a href='https://www.threads.net/@lez.flp'><SiThreads className="md:text-xl " /></a>
+          <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className="text-xl " /></a>
         </div>
       </div>
     </motion.div>
