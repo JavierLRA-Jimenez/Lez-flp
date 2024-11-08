@@ -3,11 +3,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import v1 from '../../assets/Vertical/1V.webp'
-import v3 from '../../assets/Vertical/3V.webp'
+import v1 from '../../assets/Vertical/1v.webp'
+import v3 from '../../assets/Vertical/3v.webp'
 import v4 from '../../assets/Vertical/4V.webp'
 import v5 from '../../assets/Vertical/5V.webp'
-import v6 from '../../assets/Vertical/6V.webp'
+import v6 from '../../assets/Vertical/6v.webp'
 import v12 from '../../assets/Vertical/12v.webp'
 import v18 from '../../assets/Vertical/18v.webp'
 import v20 from '../../assets/Vertical/20V.webp'
