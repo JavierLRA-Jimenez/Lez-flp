@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{html,js,jsx,css}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        bloodborne: ['Fleshandblood', 'serif'], 
+      },
+    },
   },
   plugins: [],
 }

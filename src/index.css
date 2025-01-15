@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
 
 :root{
-	font-family: 'Lato', sans-serif;
+	font-family: 'lato', sans-serif;
 }
 
+#paleta{
+	font-family: 'Uncial Antiqua', serif;
+}
 
 li{
-	opacity: .3;
 	cursor: pointer;
 }
 
@@ -25,3 +28,10 @@ Lez:hover img{
 ::-webkit-scrollbar{
 	display: none;
 }
+
+@font-face {
+	font-family: 'Fleshandblood';
+	src: url('/public/fonts/Fleshandblood-MVA5x.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import infierno from '../../assets/Industrial.jpg';
-import mask from '../../assets/maskgrislez.jpg';
+import mask from '../../assets/Vertical/Vertical2.jpg';
 import { BsInstagram } from 'react-icons/bs';
 import { BsTiktok } from 'react-icons/bs';
 import { BsSpotify } from 'react-icons/bs';
@@ -56,62 +55,75 @@ const About = () => {
 
   return (
     <motion.div
-      className="md:h-[60rem] bg-cover bg-center  bg-fixed "
-      style={{ backgroundImage: `url(${mask})` }}
-      id="about"
-    >
-      <h1 className="text-4xl p-8 items-center justify-center flex gap-8 text-white z-99 ">
-        BIOGRAFÍA
-      </h1>
+  className="relative min-h-screen flex flex-col items-center justify-center text-white"
+  id="about"
+>
+  {/* Imagen de fondo con opacidad */}
+  <div
+    className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-fixed grayscale opacity-10"
+    style={{
+      backgroundImage: `url(${mask})`,
+      zIndex: -1,
+    }}
+  />
+  <h1 className="text-4xl p-8 flex justify-center text-white z-99">
+    BIOGRAFÍA
+  </h1>
 
-      <div className="flex flex-col-reverse md:flex-row text-white md:pt-20 pt-10">
-        <div className="md:w-[50%] sm:w-full md:order-2 ">
-          <div className="md:w-[31rem] md:pl-[10rem] w-[18rem] ml-[4rem]">
-            <img src={infierno} alt="Infierno" className="rounded-xl" />
-          </div>
-        </div>
-        <div className="md:w-[50%] sm:w-full md:order-1">
-          <div className={`rounded-md md:text-base sm:text-lg sm:justify-items-center pl-3 md:ml-[10rem]`} style={sliderStyle}>
-            <p>
-              Lez es un talentoso DJ y productor originario de Argentina. Con una trayectoria que
-              comenzó en 2013, ha demostrado ser una promesa en la escena electrónica de América
-              Latina. Su versatilidad y carisma le han permitido adaptarse a diversos estilos y tendencias
-              musicales, consolidándose como un artista capaz de cautivar al público detrás de las
-              consolas.
-            </p>
-            <br />
-            <p>
-              Con una formación académica en producción musical, Lez ha enriquecido sus
-              conocimientos y habilidades, reflejándose en cada una de sus actuaciones y producciones.
-              Su talento lo ha llevado a presentarse en una amplia variedad de clubes y ciudades a lo
-              largo del país, incluyendo Rosario, Buenos Aires, Santa Fe, entre otras.
-            </p>
-            <br />
-            <p>
-              A lo largo de su trayectoria, Lez ha logrado que su música resuene en lugares
-              emblemáticos de la escena electrónica, marcando su presencia y dejando una huella
-              significativa. Actualmente, está enfocado en sus propias producciones musicales y en su
-              crecimiento artístico, siempre buscando innovar y conectar con su audiencia de manera
-              auténtica y memorable.
-            </p>
-            <br />
-            <br />
-            <br />
-          </div>
-        </div>
-      </div>
+  <div className="w-full max-w-[1090px] px-5 text-center">
+    <p>
+      <span className='text-red-600'>Soy Lez</span>, nacido en Rosario, Argentina.
+    </p>
+    <br />
+    <p>
+      Desde hace más de una década, <span className='text-red-600'>he dedicado mi vida a la música</span>, colaborando
+      con artistas que representan lo mejor de la escena nacional y ganándome el respeto
+      de figuras internacionales que inspiran y marcan tendencia a nivel global. <span className='text-red-600'>Este
+      recorrido me ha permitido consolidar una identidad artística, siempre en
+      constante evolución y con el compromiso de entregar lo mejor de mí en cada
+      proyecto</span>.
+    </p>
+    <br />
+    <p>
+    <span className='text-red-600'>Mi visión va más allá de la simple creación de música</span>. Aspiro a dejar una huella
+      que perdure, trascienda generaciones e impacte a quienes se encuentren con mi
+      obra. <span className='text-red-600'>Para mí, la música es mucho más que sonidos: es emoción, es conexión,
+      es un legado</span>. Cada track que creo tiene una esencia única, una personalidad, una
+      "alma" que lo define. <span className='text-red-600'>Quiero que mi música sea un vehículo para transmitir
+      emociones genuinas y crear experiencias inolvidables</span>.
+    </p>
+    <br />
+    <p>
+      A lo largo de mi carrera, siempre he buscado ir más allá, <span className='text-red-600'>romper los límites y
+      desafiar lo establecido</span>. Mi enfoque no solo está en el sonido, sino también en
+      cómo presentarlo. <span className='text-red-600'>Es por eso que en cada show cuido cada detalle para ofrecer
+      una experiencia integral que une música, estética y emoción</span>.
+    </p>
+    <br />
+    <p>
+      Mi estilo en el escenario es una extensión de mi visión artística. <span className='text-red-600'>Utilizo un atuendo
+      distintivo que genera curiosidad e intriga, algo que va más allá de lo visual y
+      refuerza la narrativa que quiero transmitir</span>. Mi intención es capturar la atención
+      del público desde el primer momento y guiarlos a través de un viaje musical y
+      sensorial que se quede con ellos mucho después de que termine el espectáculo.
+    </p>
+    <br />
+    <p>
+      La música no es solo mi pasión, <span className='text-red-600'>es mi propósito</span>. Es mi forma de conectar con el
+      mundo, dejar un mensaje y construir algo que sea recordado y valorado con el
+      tiempo. Cada paso que doy está dirigido hacia ese objetivo: <span className='text-red-600'>trascender</span>.
+    </p>
+  </div>
 
-      <div className="flex flex-col md:w-[50%] sm:w-full md:pl-[7rem] pl-3 pt-5 justify-center items-center lg:w-auto lg:mt-20 lg:pl-0">
-        <div className="flex flex-row pt-3 z-50 space-x-7 text-[#f3f3f7]">
-          <a href='https://www.instagram.com/lez.flp/'><BsInstagram className="md:text-xl "  /></a>
-          <a href='https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1'><BsSpotify className="md:text-xl " /></a>
-          <a href='https://www.beatport.com/artist/lez/134309'><SiBeatport className="text-xl " /></a>
-          <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className="md:text-xl  " /></a>
-          <a href='https://www.threads.net/@lez.flp'><SiThreads className="md:text-xl " /></a>
-          <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className="text-xl " /></a>
-        </div>
-      </div>
-    </motion.div>
+  <div className="flex space-x-7 pt-5 mt-5 mb-6">
+    <a href="https://www.instagram.com/lez.flp/"><BsInstagram className="text-xl" /></a>
+    <a href="https://open.spotify.com/artist/0rE1EJOUYpklfh9pdZClT8?si=JfitBPKdQOme00NyinWIMA&nd=1"><BsSpotify className="text-xl" /></a>
+    <a href="https://www.beatport.com/artist/lez/134309"><SiBeatport className="text-xl" /></a>
+    <a href="https://www.tiktok.com/@lez.flp"><BsTiktok className="text-xl" /></a>
+    <a href="https://www.threads.net/@lez.flp"><SiThreads className="text-xl" /></a>
+    <a href="https://www.youtube.com/@lez."><IoLogoYoutube className="text-xl" /></a>
+  </div>
+</motion.div>
   );
 };
 
