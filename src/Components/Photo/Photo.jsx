@@ -15,14 +15,7 @@ import { motion } from 'framer-motion';
 import { useMedia } from 'react-use';
 
 const Contact = () => {
-  const images = [
-    v1,
-    v2,
-    v3,
-    h1,
-    h2,
-    h3,
-  ];
+  const images = [v1, v2, v3, h1, h2, h3];
 
   // Primer carrusel (verticales)
   const firstCarouselImages = images.slice(0, 3); 
@@ -31,7 +24,6 @@ const Contact = () => {
   const horizontalImages = images.slice(3, 6); 
 
   const isSmallScreen = useMedia('(max-width: 640px)');
-
   const firstCarouselSlidesToShow = isSmallScreen ? 1 : 2;
 
   const firstCarouselSettings = {
@@ -51,9 +43,22 @@ const Contact = () => {
   };
 
   return (
-    <motion.div className="md:h-[60rem] lg:h-[65rem] h-auto px-4">
+    <motion.div
+      className="
+        w-full
+        px-4
+        md:h-[60rem]
+        lg:h-[65rem]
+        h-auto
+        2xl:max-w-[1280px]
+        2xl:mx-auto
+      "
+    >
       <div>
-        <h2 className="text-4xl p-8 items-center justify-center flex gap-8 text-white" id="fotos">
+        <h2
+          className="text-4xl p-8 items-center justify-center flex gap-8 text-white"
+          id="fotos"
+        >
           FOTOS
         </h2>
       </div>
@@ -80,9 +85,11 @@ const Contact = () => {
       {/* Segundo Carrusel o Imágenes Estáticas */}
       <div className="pt-8 pb-12">
         {isSmallScreen ? (
-          <Slider {...horizontalCarouselSettings}
-          style={{ width: '90%', margin: '0 auto' }}
-           className="pt-6">
+          <Slider
+            {...horizontalCarouselSettings}
+            style={{ width: '90%', margin: '0 auto' }}
+            className="pt-6"
+          >
             {horizontalImages.map((image, index) => (
               <div key={index} className="flex justify-center">
                 <img
