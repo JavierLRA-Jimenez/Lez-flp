@@ -7,7 +7,7 @@ const Icono = () => {
     <section className="flex flex-col items-center md:h-[17rem] h-40">
       <RouterLink to="/Fear">
         <div className="flex justify-center items-center mt-8">
-          <GiPumpkinMask className="text-red-700 w-24 h-24 md:w-48 md:h-48" />
+          <GiPumpkinMask className="text-blue-700 w-24 h-24 md:w-48 md:h-48" />
         </div>
       </RouterLink>
       
