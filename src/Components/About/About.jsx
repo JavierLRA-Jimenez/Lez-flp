@@ -121,7 +121,7 @@ const About = () => {
     <a href="https://www.beatport.com/artist/lez/134309"><SiBeatport className="text-xl" /></a>
     <a href="https://www.tiktok.com/@lez.flp"><BsTiktok className="text-xl" /></a>
     <a href="https://www.threads.net/@lez.flp"><SiThreads className="text-xl" /></a>
-    <a href="https://www.youtube.com/@lez."><IoLogoYoutube className="text-xl" /></a>
+    <a href="https://www.youtube.com/@lez_flp"><IoLogoYoutube className="text-xl" /></a>
   </div>
 </motion.div>
   );

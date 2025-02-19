@@ -98,9 +98,9 @@ const Header = () => {
           <a href='https://www.tiktok.com/@lez.flp'><BsTiktok className='cursor-pointer' /></a>
           <a href='https://www.threads.net/@lez.flp'><SiThreads className='cursor-pointer'/></a>
             <RouterLink to="/Fear">
-  <GiPumpkinMask className='cursor-pointer' />
-</RouterLink>
-           <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer'/></a>
+          <GiPumpkinMask className='cursor-pointer' />
+          </RouterLink>
+           <a href='https://www.youtube.com/@lez_flp'><IoLogoYoutube className='cursor-pointer'/></a>
           </div>
         </div>
       )}
@@ -135,7 +135,7 @@ const Header = () => {
           <RouterLink to="/Fear">
   <GiPumpkinMask className='cursor-pointer' />
 </RouterLink>
-          <a href='https://www.youtube.com/@lez.'><IoLogoYoutube className='cursor-pointer'/></a>
+          <a href='https://www.youtube.com/@lez_flp'><IoLogoYoutube className='cursor-pointer'/></a>
         </div>
       )}
   </nav>
